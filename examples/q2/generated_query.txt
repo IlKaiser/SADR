@@ -1,0 +1,56 @@
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)
+ MATCH (n1:Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Horror"
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Director)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Actor)
+ MATCH (n4:Genre)
+ WHERE n4.genre = "Horror" MATCH (n5:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Horror"
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)
+ MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)
+ MATCH (n1:Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Horror" MATCH (n4:Genre)
+
+ RETURN n

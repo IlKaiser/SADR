@@ -1,0 +1,1940 @@
+[
+ {
+  "id": "A01",
+  "question": "Which Japanese animated movies are in the graph?",
+  "gold_size": 99,
+  "seeds": [
+   {
+    "id": "movie_14069",
+    "label": "Movie",
+    "score": 0.8679571151733398
+   },
+   {
+    "id": "movie_168538",
+    "label": "Movie",
+    "score": 0.860809326171875
+   },
+   {
+    "id": "movie_47951",
+    "label": "Movie",
+    "score": 0.8602304458618164
+   },
+   {
+    "id": "movie_11366",
+    "label": "Movie",
+    "score": 0.8598613739013672
+   },
+   {
+    "id": "movie_30959",
+    "label": "Movie",
+    "score": 0.8593244552612305
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "RETURN DISTINCT m\nWHERE ANY(c IN m.countries WHERE trim(c) = 'Japan') AND m.in_genre {genre: 'Animation'} LIMIT 200",
+  "text2cypher_error": "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', ',', 'AS', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'IN",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 3.48
+ },
+ {
+  "id": "A02",
+  "question": "List Japanese horror films.",
+  "gold_size": 49,
+  "seeds": [
+   {
+    "id": "movie_36577",
+    "label": "Movie",
+    "score": 0.8577127456665039
+   },
+   {
+    "id": "movie_30959",
+    "label": "Movie",
+    "score": 0.856623649597168
+   },
+   {
+    "id": "movie_12720",
+    "label": "Movie",
+    "score": 0.8548288345336914
+   },
+   {
+    "id": "movie_12487",
+    "label": "Movie",
+    "score": 0.8542652130126953
+   },
+   {
+    "id": "movie_14282",
+    "label": "Movie",
+    "score": 0.8529167175292969
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n MATCH (n5:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Horror'}), \n      (m:Movie)<-[:ACTED_IN]-(a:Actor), \n      (m:Movie)<-[:DIRECTED]-(d:Director)\nWHERE any(c IN m.countries WHERE trim(c) = 'Japan')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.19,
+  "seconds_text2cypher": 6.12
+ },
+ {
+  "id": "A03",
+  "question": "Find French romantic movies.",
+  "gold_size": 161,
+  "seeds": [
+   {
+    "id": "movie_10995",
+    "label": "Movie",
+    "score": 0.8648653030395508
+   },
+   {
+    "id": "movie_4024",
+    "label": "Movie",
+    "score": 0.8616676330566406
+   },
+   {
+    "id": "movie_259",
+    "label": "Movie",
+    "score": 0.8565101623535156
+   },
+   {
+    "id": "movie_21200",
+    "label": "Movie",
+    "score": 0.8562250137329102
+   },
+   {
+    "id": "movie_5781",
+    "label": "Movie",
+    "score": 0.855839729309082
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Romance\" MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Romance\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Romance\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Romance\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Romance\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Romance\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Romantic'})\nWHERE ANY(c IN m.countries WHERE trim(c) = 'France')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.01,
+  "seconds_text2cypher": 3.8
+ },
+ {
+  "id": "A04",
+  "question": "Which Italian crime movies do you have?",
+  "gold_size": 22,
+  "seeds": [
+   {
+    "id": "movie_5156",
+    "label": "Movie",
+    "score": 0.8503828048706055
+   },
+   {
+    "id": "movie_49133",
+    "label": "Movie",
+    "score": 0.848973274230957
+   },
+   {
+    "id": "movie_30874",
+    "label": "Movie",
+    "score": 0.8443450927734375
+   },
+   {
+    "id": "movie_23637",
+    "label": "Movie",
+    "score": 0.8429460525512695
+   },
+   {
+    "id": "movie_12491",
+    "label": "Movie",
+    "score": 0.8390789031982422
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: \"Crime\"}), (m)<-[:ACTED_IN]-(a:Actor)\nWHERE ANY(lang IN m.languages WHERE lang = 'Italian')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.69,
+  "seconds_text2cypher": 4.18
+ },
+ {
+  "id": "A05",
+  "question": "Show me German war movies.",
+  "gold_size": 40,
+  "seeds": [
+   {
+    "id": "movie_11101",
+    "label": "Movie",
+    "score": 0.8752059936523438
+   },
+   {
+    "id": "movie_39266",
+    "label": "Movie",
+    "score": 0.8735466003417969
+   },
+   {
+    "id": "movie_2253",
+    "label": "Movie",
+    "score": 0.8723726272583008
+   },
+   {
+    "id": "movie_975",
+    "label": "Movie",
+    "score": 0.8716373443603516
+   },
+   {
+    "id": "movie_15876",
+    "label": "Movie",
+    "score": 0.869563102722168
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n WHERE n4.name = \"War\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"War\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"War\" MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"War\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"War\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'War'}), \n      (m)<-[:ACTED_IN]-(a:Actor), \n      (m)<-[:DIRECTED]-(d:Director)\nWHERE ANY(c IN m.countries WHERE trim(c) = 'Germany')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.21,
+  "seconds_text2cypher": 5.98
+ },
+ {
+  "id": "A06",
+  "question": "What South Korean thrillers are there?",
+  "gold_size": 12,
+  "seeds": [
+   {
+    "id": "movie_25660",
+    "label": "Movie",
+    "score": 0.8249292373657227
+   },
+   {
+    "id": "person_63429",
+    "label": "Director",
+    "score": 0.8242053985595703
+   },
+   {
+    "id": "movie_20605",
+    "label": "Movie",
+    "score": 0.8216638565063477
+   },
+   {
+    "id": "movie_11423",
+    "label": "Movie",
+    "score": 0.8200569152832031
+   },
+   {
+    "id": "movie_1255",
+    "label": "Movie",
+    "score": 0.8179855346679688
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"South Korea\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Crime\"\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"South Korea\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"South Korea\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Crime\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"South Korea\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Crime\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"South Korea\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Crime\" } RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Crime\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Crime\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"South Korea\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "RETURN DISTINCT m\nWHERE ANY(c IN m.countries WHERE trim(c) = 'South Korea') AND EXISTS((m)-[:IN_GENRE]->(g:Genre {name: 'Thriller'}))\nLIMIT 200",
+  "text2cypher_error": "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', ',', 'AS', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'IN",
+  "seconds_sadr": 0.37,
+  "seconds_text2cypher": 3.6
+ },
+ {
+  "id": "A07",
+  "question": "British comedies, please.",
+  "gold_size": 395,
+  "seeds": [
+   {
+    "id": "movie_9026",
+    "label": "Movie",
+    "score": 0.8408823013305664
+   },
+   {
+    "id": "movie_43818",
+    "label": "Movie",
+    "score": 0.8333711624145508
+   },
+   {
+    "id": "movie_10368",
+    "label": "Movie",
+    "score": 0.8328762054443359
+   },
+   {
+    "id": "movie_9267",
+    "label": "Movie",
+    "score": 0.8328027725219727
+   },
+   {
+    "id": "movie_164721",
+    "label": "Movie",
+    "score": 0.8324728012084961
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"UK\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"UK\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"UK\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Genre)\n WHERE n2.name = \"Drama\" MATCH (n3:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Comedy\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Comedy\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"UK\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n2:Genre) WHERE n2.name = \"Drama\" MATCH (n3:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Comedy'}), \n      (m)<-[:DIRECTED]-(d:Director),\n      (a:Actor)-[:ACTED_IN]->(m)\nWHERE g.name = 'Comedy' AND d.born IS NOT NULL AND ALL(c IN m.countries WHERE trim(c) =~ 'UK|England')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 7.24
+ },
+ {
+  "id": "A08",
+  "question": "Which Canadian horror movies are available?",
+  "gold_size": 89,
+  "seeds": [
+   {
+    "id": "movie_41848",
+    "label": "Movie",
+    "score": 0.8416519165039062
+   },
+   {
+    "id": "movie_27429",
+    "label": "Movie",
+    "score": 0.8388071060180664
+   },
+   {
+    "id": "person_224",
+    "label": "Actor",
+    "score": 0.8384590148925781
+   },
+   {
+    "id": "movie_15730",
+    "label": "Movie",
+    "score": 0.8323726654052734
+   },
+   {
+    "id": "movie_82507",
+    "label": "Movie",
+    "score": 0.832366943359375
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Canada\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Horror\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Canada\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Horror\"\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n0:Movie)\n MATCH (n1:Movie)\n MATCH (n2:Movie)\n MATCH (n3:Movie)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Canada\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Horror\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Horror\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Horror\" } RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Canada\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Horror\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "RETURN DISTINCT m\nWHERE ANY(c IN m.countries WHERE TRIM(c) = 'Canada') AND EXISTS((m)-[:IN_GENRE {name: 'Horror'}]->(g))\nLIMIT 200",
+  "text2cypher_error": "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', ',', 'AS', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'IN",
+  "seconds_sadr": 0.99,
+  "seconds_text2cypher": 3.77
+ },
+ {
+  "id": "A09",
+  "question": "Find Hong Kong action movies.",
+  "gold_size": 79,
+  "seeds": [
+   {
+    "id": "movie_10974",
+    "label": "Movie",
+    "score": 0.8523292541503906
+   },
+   {
+    "id": "movie_10610",
+    "label": "Movie",
+    "score": 0.8507461547851562
+   },
+   {
+    "id": "movie_11782",
+    "label": "Movie",
+    "score": 0.8500547409057617
+   },
+   {
+    "id": "movie_38955",
+    "label": "Movie",
+    "score": 0.8485078811645508
+   },
+   {
+    "id": "movie_9056",
+    "label": "Movie",
+    "score": 0.8483762741088867
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Hong Kong\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n WHERE n1.name = \"Jackie Chan\" MATCH (n1:Person&Actor&Director)\n WHERE n1.name = \"Jackie Chan\" MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Comedy\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Hong Kong\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor&Director)\n WHERE n1.name = \"Jackie Chan\" MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Action\" MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Hong Kong\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Action\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Hong Kong\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Comedy\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Hong Kong\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Jackie Chan\" MATCH (n1:Person&Actor)\n MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Jackie Chan\" MATCH (n2:Genre)\n WHERE n2.name = \"Action\" MATCH (n3:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries AND EXISTS { MATCH (n)-[:ACTED_IN]-(n1:Person&Actor&Director) WHERE n1.name = \"Jackie Chan\" MATCH (n1:Person&Actor&Director) } AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Comedy\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries AND EXISTS { MATCH (n)-[:ACTED_IN]-(n1:Person&Actor&Director) WHERE n1.name = \"Jackie Chan\" MATCH (n2:Person&Actor) } AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Action\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Action\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Comedy\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Hong Kong\" IN n.countries AND EXISTS { MATCH (n)-[:ACTED_IN]-(n0:Person&Actor&Director) WHERE n0.name = \"Jackie Chan\" MATCH (n2:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Action'}), \n      (m)<-[:IN_GENRE]-(g)\nWHERE any(c IN m.countries WHERE trim(c) = 'Hong Kong')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.33,
+  "seconds_text2cypher": 4.69
+ },
+ {
+  "id": "A10",
+  "question": "Spanish dramas in the collection?",
+  "gold_size": 106,
+  "seeds": [
+   {
+    "id": "movie_42106",
+    "label": "Movie",
+    "score": 0.8661832809448242
+   },
+   {
+    "id": "movie_4203",
+    "label": "Movie",
+    "score": 0.8623619079589844
+   },
+   {
+    "id": "genre_drama",
+    "label": "Genre",
+    "score": 0.8616809844970703
+   },
+   {
+    "id": "movie_29263",
+    "label": "Movie",
+    "score": 0.8571643829345703
+   },
+   {
+    "id": "movie_25376",
+    "label": "Movie",
+    "score": 0.8558273315429688
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Genre)\n WHERE n.name = \"Drama\"\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n0:Movie)\n MATCH (n1:Movie)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Genre) WHERE n.name = \"Drama\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Genre) WHERE n.name = \"Drama\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name:'Drama'}), \n      (m)<-[:ACTED_IN]-(a:Person)\nWHERE g.name = 'Drama' AND ANY(lang IN m.languages WHERE lang = 'Spanish')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.12,
+  "seconds_text2cypher": 5.77
+ },
+ {
+  "id": "A11",
+  "question": "Which Australian adventure films are in the dataset?",
+  "gold_size": 44,
+  "seeds": [
+   {
+    "id": "movie_16194",
+    "label": "Movie",
+    "score": 0.8455324172973633
+   },
+   {
+    "id": "movie_11135",
+    "label": "Movie",
+    "score": 0.8375320434570312
+   },
+   {
+    "id": "movie_34637",
+    "label": "Movie",
+    "score": 0.8372020721435547
+   },
+   {
+    "id": "movie_46221",
+    "label": "Movie",
+    "score": 0.8358373641967773
+   },
+   {
+    "id": "movie_32567",
+    "label": "Movie",
+    "score": 0.8302698135375977
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Australia\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n MATCH (n5:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Australia\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Australia\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Australia\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "RETURN DISTINCT m\nWHERE ANY(c IN m.countries WHERE TRIM(c) = 'Australia') AND m.in_genre {name: 'Adventure'}\nLIMIT 200",
+  "text2cypher_error": "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', ',', 'AS', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'IN",
+  "seconds_sadr": 0.87,
+  "seconds_text2cypher": 2.84
+ },
+ {
+  "id": "A12",
+  "question": "Swedish films of the drama genre.",
+  "gold_size": 71,
+  "seeds": [
+   {
+    "id": "movie_42695",
+    "label": "Movie",
+    "score": 0.8784332275390625
+   },
+   {
+    "id": "movie_10238",
+    "label": "Movie",
+    "score": 0.8695306777954102
+   },
+   {
+    "id": "movie_133919",
+    "label": "Movie",
+    "score": 0.8680429458618164
+   },
+   {
+    "id": "movie_31304",
+    "label": "Movie",
+    "score": 0.8646106719970703
+   },
+   {
+    "id": "movie_191294",
+    "label": "Movie",
+    "score": 0.8628101348876953
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Sweden\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Sweden\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Sweden\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Sweden\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Sweden\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Sweden\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Drama'}), (p:Person)-[:ACTED_IN]->(m)\nWHERE g.name = 'Drama' AND ANY(c IN m.countries WHERE trim(c) = 'Sweden')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.26,
+  "seconds_text2cypher": 5.34
+ },
+ {
+  "id": "B01",
+  "question": "Which movies did Alfred Hitchcock direct?",
+  "gold_size": 38,
+  "seeds": [
+   {
+    "id": "person_2636",
+    "label": "Director",
+    "score": 0.872828483581543
+   },
+   {
+    "id": "person_2642",
+    "label": "Actor",
+    "score": 0.842534065246582
+   },
+   {
+    "id": "person_12497",
+    "label": "Actor",
+    "score": 0.834014892578125
+   },
+   {
+    "id": "person_75463",
+    "label": "Actor",
+    "score": 0.8258581161499023
+   },
+   {
+    "id": "movie_112336",
+    "label": "Movie",
+    "score": 0.8240118026733398
+   }
+  ],
+  "ucq": " MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Alfred Hitchcock\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.16,
+  "seconds_text2cypher": 2.54
+ },
+ {
+  "id": "B02",
+  "question": "Films directed by Hayao Miyazaki.",
+  "gold_size": 12,
+  "seeds": [
+   {
+    "id": "person_608",
+    "label": "Actor",
+    "score": 0.8768529891967773
+   },
+   {
+    "id": "person_1414",
+    "label": "Director",
+    "score": 0.8525094985961914
+   },
+   {
+    "id": "movie_129",
+    "label": "Movie",
+    "score": 0.851191520690918
+   },
+   {
+    "id": "movie_4935",
+    "label": "Movie",
+    "score": 0.8443727493286133
+   },
+   {
+    "id": "movie_8392",
+    "label": "Movie",
+    "score": 0.8438177108764648
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor&Director)\n WHERE n.name = \"Hayao Miyazaki\"\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries MATCH (n1:Movie)\n WHERE \"Japan\" IN n1.countries MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Actor&Director)\n WHERE n4.name = \"Hayao Miyazaki\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Hayao Miyazaki\" MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Hayao Miyazaki\" MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor&Director) WHERE n.name = \"Hayao Miyazaki\" RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor&Director) WHERE n.name = \"Hayao Miyazaki\" RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries AND EXISTS { MATCH (n)-[:DIRECTED]-(n4:Person&Actor&Director) WHERE n4.name = \"Hayao Miyazaki\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: 'Hayao Miyazaki'})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.87,
+  "seconds_text2cypher": 3.29
+ },
+ {
+  "id": "B03",
+  "question": "List the movies by Stanley Kubrick.",
+  "gold_size": 12,
+  "seeds": [
+   {
+    "id": "movie_30416",
+    "label": "Movie",
+    "score": 0.8640604019165039
+   },
+   {
+    "id": "movie_84330",
+    "label": "Movie",
+    "score": 0.8442020416259766
+   },
+   {
+    "id": "movie_59572",
+    "label": "Movie",
+    "score": 0.8356924057006836
+   },
+   {
+    "id": "movie_58261",
+    "label": "Movie",
+    "score": 0.8340702056884766
+   },
+   {
+    "id": "movie_20967",
+    "label": "Movie",
+    "score": 0.8311500549316406
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Genre)\n WHERE n2.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n2:Genre) WHERE n2.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Stanley Kubrick\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.19,
+  "seconds_text2cypher": 2.42
+ },
+ {
+  "id": "B04",
+  "question": "What has Woody Allen directed?",
+  "gold_size": 42,
+  "seeds": [
+   {
+    "id": "person_1243",
+    "label": "Actor",
+    "score": 0.8896102905273438
+   },
+   {
+    "id": "movie_76330",
+    "label": "Movie",
+    "score": 0.84332275390625
+   },
+   {
+    "id": "movie_81167",
+    "label": "Movie",
+    "score": 0.8371009826660156
+   },
+   {
+    "id": "person_93975",
+    "label": "Director",
+    "score": 0.830322265625
+   },
+   {
+    "id": "person_9965",
+    "label": "Actor",
+    "score": 0.8197498321533203
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor&Director)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries MATCH (n2:Movie)\n WHERE \"USA\" IN n2.countries MATCH (n3:Movie)\n WHERE \"USA\" IN n3.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Woody Allen\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.18,
+  "seconds_text2cypher": 3.1
+ },
+ {
+  "id": "B05",
+  "question": "Movies directed by Werner Herzog.",
+  "gold_size": 23,
+  "seeds": [
+   {
+    "id": "person_6818",
+    "label": "Actor",
+    "score": 0.8893232345581055
+   },
+   {
+    "id": "movie_11710",
+    "label": "Movie",
+    "score": 0.8888978958129883
+   },
+   {
+    "id": "movie_8672",
+    "label": "Movie",
+    "score": 0.869816780090332
+   },
+   {
+    "id": "movie_59490",
+    "label": "Movie",
+    "score": 0.8688755035400391
+   },
+   {
+    "id": "movie_99189",
+    "label": "Movie",
+    "score": 0.8627033233642578
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor&Director)\n WHERE n.name = \"Werner Herzog\"\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n0:Movie)\n MATCH (n1:Movie)\n WHERE \" UK\" IN n1.countries MATCH (n2:Movie)\n MATCH (n3:Movie)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Werner Herzog\" MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \" UK\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Werner Herzog\" MATCH (n1:Person&Actor)\n MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Werner Herzog\" MATCH (n2:Genre)\n WHERE n2.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \" UK\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n WHERE n2.name = \"Werner Herzog\" MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n WHERE n0.name = \"Werner Herzog\" MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor&Director) WHERE n.name = \"Werner Herzog\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor&Director) WHERE n.name = \"Werner Herzog\" AND EXISTS { MATCH (n)-[:ACTED_IN]-(n1:Movie) WHERE \" UK\" IN n1.countries MATCH (n2:Movie) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries AND EXISTS { MATCH (n)-[:ACTED_IN]-(n0:Person&Actor&Director) WHERE n0.name = \"Werner Herzog\" MATCH (n2:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries AND EXISTS { MATCH (n)-[:DIRECTED]-(n2:Person&Actor&Director) WHERE n2.name = \"Werner Herzog\" MATCH (n3:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Werner Herzog\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.73,
+  "seconds_text2cypher": 3.1
+ },
+ {
+  "id": "B06",
+  "question": "Which films did Akira Kurosawa make?",
+  "gold_size": 14,
+  "seeds": [
+   {
+    "id": "person_5026",
+    "label": "Director",
+    "score": 0.8996744155883789
+   },
+   {
+    "id": "person_26882",
+    "label": "Director",
+    "score": 0.8562936782836914
+   },
+   {
+    "id": "person_30907",
+    "label": "Actor",
+    "score": 0.8383769989013672
+   },
+   {
+    "id": "person_7450",
+    "label": "Actor",
+    "score": 0.8323583602905273
+   },
+   {
+    "id": "person_9956",
+    "label": "Director",
+    "score": 0.8260536193847656
+   }
+  ],
+  "ucq": " MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries MATCH (n1:Movie)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries MATCH (n1:Movie)\n WHERE \"Japan\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n MATCH (n1:Movie)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Akira Kurosawa\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.17,
+  "seconds_text2cypher": 2.82
+ },
+ {
+  "id": "B07",
+  "question": "Show me Martin Scorsese movies.",
+  "gold_size": 30,
+  "seeds": [
+   {
+    "id": "movie_55676",
+    "label": "Movie",
+    "score": 0.8857746124267578
+   },
+   {
+    "id": "movie_1939",
+    "label": "Movie",
+    "score": 0.8416681289672852
+   },
+   {
+    "id": "movie_75656",
+    "label": "Movie",
+    "score": 0.841059684753418
+   },
+   {
+    "id": "movie_691",
+    "label": "Movie",
+    "score": 0.8401994705200195
+   },
+   {
+    "id": "movie_26182",
+    "label": "Movie",
+    "score": 0.8401708602905273
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Person&Director)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Martin Scorsese\"})-[:DIRECTED]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 4.96
+ },
+ {
+  "id": "B08",
+  "question": "Horror movies directed by John Carpenter.",
+  "gold_size": 9,
+  "seeds": [
+   {
+    "id": "person_11770",
+    "label": "Director",
+    "score": 0.8872776031494141
+   },
+   {
+    "id": "movie_10779",
+    "label": "Movie",
+    "score": 0.8518342971801758
+   },
+   {
+    "id": "movie_4247",
+    "label": "Movie",
+    "score": 0.8383312225341797
+   },
+   {
+    "id": "movie_4233",
+    "label": "Movie",
+    "score": 0.8355684280395508
+   },
+   {
+    "id": "movie_4232",
+    "label": "Movie",
+    "score": 0.8351888656616211
+   }
+  ],
+  "ucq": " MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE n1.year = 1996 AND \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE n.year = 1996\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Comedy\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE n.year = 1996 AND \"USA\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor&Director)\n MATCH (n4:Person&Director)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1996 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1996 AND \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1996 AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Comedy\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Comedy\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Comedy\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1996 AND \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: 'John Carpenter'})-[:DIRECTED]->(m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Horror'})\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.19,
+  "seconds_text2cypher": 7.76
+ },
+ {
+  "id": "B09",
+  "question": "Which crime films did Martin Scorsese direct?",
+  "gold_size": 7,
+  "seeds": [
+   {
+    "id": "person_7164",
+    "label": "Actor",
+    "score": 0.8234109878540039
+   },
+   {
+    "id": "movie_55676",
+    "label": "Movie",
+    "score": 0.8229341506958008
+   },
+   {
+    "id": "person_1035",
+    "label": "Director",
+    "score": 0.8123197555541992
+   },
+   {
+    "id": "movie_31556",
+    "label": "Movie",
+    "score": 0.8083515167236328
+   },
+   {
+    "id": "movie_30874",
+    "label": "Movie",
+    "score": 0.8069734573364258
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Person&Director)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n0:Movie)\n MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) WHERE EXISTS { MATCH (n)-[:DIRECTED]-(n1:Movie) WHERE \"USA\" IN n1.countries } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: \"Martin Scorsese\"})-[:DIRECTED]->(m:Movie)-[:IN_GENRE]->(g:Genre {name: \"Crime\"})\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 7.67
+ },
+ {
+  "id": "B10",
+  "question": "Science fiction movies by Steven Spielberg.",
+  "gold_size": 9,
+  "seeds": [
+   {
+    "id": "movie_62",
+    "label": "Movie",
+    "score": 0.8676042556762695
+   },
+   {
+    "id": "movie_70981",
+    "label": "Movie",
+    "score": 0.8610992431640625
+   },
+   {
+    "id": "movie_16866",
+    "label": "Movie",
+    "score": 0.86016845703125
+   },
+   {
+    "id": "movie_20423",
+    "label": "Movie",
+    "score": 0.8599920272827148
+   },
+   {
+    "id": "movie_9872",
+    "label": "Movie",
+    "score": 0.8583860397338867
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n WHERE n0.name = \"Adventure\" MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Actor&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \" UK\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Adventure\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Adventure\" MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND \" UK\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \" UK\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Adventure\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Adventure\" MATCH (n4:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (d:Director {name: 'Steven Spielberg'})<-[:DIRECTED]-(m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Sci-Fi'})\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.13,
+  "seconds_text2cypher": 7.76
+ },
+ {
+  "id": "C01",
+  "question": "Animated movies released in 1995.",
+  "gold_size": 12,
+  "seeds": [
+   {
+    "id": "movie_43475",
+    "label": "Movie",
+    "score": 0.8555107116699219
+   },
+   {
+    "id": "movie_532",
+    "label": "Movie",
+    "score": 0.8505649566650391
+   },
+   {
+    "id": "movie_37797",
+    "label": "Movie",
+    "score": 0.8480052947998047
+   },
+   {
+    "id": "movie_9323",
+    "label": "Movie",
+    "score": 0.8477096557617188
+   },
+   {
+    "id": "movie_26957",
+    "label": "Movie",
+    "score": 0.8471364974975586
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE n.year = 1995\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Animation\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE n.year = 1995\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n WHERE n0.name = \"Animation\" MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE n.year = 1995\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE n.year = 1995\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Animation\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE n.year = 1995 AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Animation\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE n.year = 1995 AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Animation\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie {year: 1995})-[:IN_GENRE]->(g:Genre {name: 'Animation'})\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.97,
+  "seconds_text2cypher": 5.95
+ },
+ {
+  "id": "C02",
+  "question": "Japanese movies from 2004.",
+  "gold_size": 15,
+  "seeds": [
+   {
+    "id": "movie_21712",
+    "label": "Movie",
+    "score": 0.8784828186035156
+   },
+   {
+    "id": "movie_26275",
+    "label": "Movie",
+    "score": 0.8716268539428711
+   },
+   {
+    "id": "movie_12720",
+    "label": "Movie",
+    "score": 0.8646974563598633
+   },
+   {
+    "id": "movie_20530",
+    "label": "Movie",
+    "score": 0.8629999160766602
+   },
+   {
+    "id": "movie_8392",
+    "label": "Movie",
+    "score": 0.8619241714477539
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "RETURN DISTINCT m\nWHERE ANY(c IN m.countries WHERE trim(c) = 'Japan') AND m.year = 2004\nLIMIT 200",
+  "text2cypher_error": "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', ',', 'AS', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'IN",
+  "seconds_sadr": 1.19,
+  "seconds_text2cypher": 3.93
+ },
+ {
+  "id": "C03",
+  "question": "Westerns from the 1960s.",
+  "gold_size": 32,
+  "seeds": [
+   {
+    "id": "movie_11574",
+    "label": "Movie",
+    "score": 0.8416500091552734
+   },
+   {
+    "id": "movie_11897",
+    "label": "Movie",
+    "score": 0.8355464935302734
+   },
+   {
+    "id": "movie_28736",
+    "label": "Movie",
+    "score": 0.8341169357299805
+   },
+   {
+    "id": "movie_576",
+    "label": "Movie",
+    "score": 0.8341150283813477
+   },
+   {
+    "id": "movie_14551",
+    "label": "Movie",
+    "score": 0.8279848098754883
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Western\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n MATCH (n5:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Western\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Western\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Western\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Western\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Western\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Western\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Western\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Western'})\nWHERE m.year >= 1960 AND m.year < 1970\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.07,
+  "seconds_text2cypher": 7.09
+ },
+ {
+  "id": "C04",
+  "question": "Film-noir movies of the 1940s.",
+  "gold_size": 56,
+  "seeds": [
+   {
+    "id": "movie_1939",
+    "label": "Movie",
+    "score": 0.8368730545043945
+   },
+   {
+    "id": "movie_31556",
+    "label": "Movie",
+    "score": 0.8355627059936523
+   },
+   {
+    "id": "movie_9442",
+    "label": "Movie",
+    "score": 0.835352897644043
+   },
+   {
+    "id": "movie_22575",
+    "label": "Movie",
+    "score": 0.8290376663208008
+   },
+   {
+    "id": "movie_22307",
+    "label": "Movie",
+    "score": 0.8266000747680664
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Crime\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Crime\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Genre)\n MATCH (n3:Genre)\n WHERE n3.name = \"Crime\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Crime\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Crime\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Crime\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Film-Noir'}), \n     (m)<-[:DIRECTED]-(d:Director)\nWHERE m.year >= 1940 AND m.year < 1950\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 8.66
+ },
+ {
+  "id": "C05",
+  "question": "French films released in 2010.",
+  "gold_size": 25,
+  "seeds": [
+   {
+    "id": "movie_48303",
+    "label": "Movie",
+    "score": 0.8774185180664062
+   },
+   {
+    "id": "movie_4485",
+    "label": "Movie",
+    "score": 0.8694753646850586
+   },
+   {
+    "id": "movie_39452",
+    "label": "Movie",
+    "score": 0.8693361282348633
+   },
+   {
+    "id": "movie_4031",
+    "label": "Movie",
+    "score": 0.8687810897827148
+   },
+   {
+    "id": "movie_194",
+    "label": "Movie",
+    "score": 0.8677539825439453
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"France\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor&Director)\n MATCH (n4:Person&Director)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"France\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie {year: 2010})-[:IN_GENRE]->(g:Genre), (m)<-[:ACTED_IN]-(a:Actor), (m)<-[:DIRECTED]-(d:Director)\nWHERE g.name = 'French'\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.21,
+  "seconds_text2cypher": 8.83
+ },
+ {
+  "id": "C06",
+  "question": "Musicals made before 1960.",
+  "gold_size": 106,
+  "seeds": [
+   {
+    "id": "movie_77448",
+    "label": "Movie",
+    "score": 0.8386945724487305
+   },
+   {
+    "id": "movie_65203",
+    "label": "Movie",
+    "score": 0.8299369812011719
+   },
+   {
+    "id": "person_53584",
+    "label": "Actor",
+    "score": 0.8208446502685547
+   },
+   {
+    "id": "movie_29376",
+    "label": "Movie",
+    "score": 0.8170051574707031
+   },
+   {
+    "id": "movie_23997",
+    "label": "Movie",
+    "score": 0.8161821365356445
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Person&Director)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:DIRECTED]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Person&Director)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Musical'})\nWHERE m.year < 1960\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 6.29
+ },
+ {
+  "id": "C07",
+  "question": "Documentaries from 2008.",
+  "gold_size": 21,
+  "seeds": [
+   {
+    "id": "genre_documentary",
+    "label": "Genre",
+    "score": 0.873748779296875
+   },
+   {
+    "id": "movie_26763",
+    "label": "Movie",
+    "score": 0.8463926315307617
+   },
+   {
+    "id": "movie_110354",
+    "label": "Movie",
+    "score": 0.8448610305786133
+   },
+   {
+    "id": "movie_7944",
+    "label": "Movie",
+    "score": 0.8425359725952148
+   },
+   {
+    "id": "movie_79515",
+    "label": "Movie",
+    "score": 0.8425188064575195
+   }
+  ],
+  "ucq": " MATCH (n:Genre)\n WHERE n.name = \"Documentary\"\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n0:Movie)\n MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Documentary\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Genre)\n WHERE n2.name = \"Documentary\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Genre) WHERE n.name = \"Documentary\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Genre) WHERE n.name = \"Documentary\" AND EXISTS { MATCH (n)-[:IN_GENRE]-(n1:Movie) WHERE \"USA\" IN n1.countries } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Documentary\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n2:Genre) WHERE n2.name = \"Documentary\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie {year: 2008})-[:IN_GENRE]->(g:Genre {name: 'Documentary'})\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.05,
+  "seconds_text2cypher": 6.51
+ },
+ {
+  "id": "C08",
+  "question": "Italian movies from the 1970s.",
+  "gold_size": 44,
+  "seeds": [
+   {
+    "id": "movie_37916",
+    "label": "Movie",
+    "score": 0.8574256896972656
+   },
+   {
+    "id": "movie_4789",
+    "label": "Movie",
+    "score": 0.8545989990234375
+   },
+   {
+    "id": "movie_10368",
+    "label": "Movie",
+    "score": 0.8541936874389648
+   },
+   {
+    "id": "movie_8416",
+    "label": "Movie",
+    "score": 0.854034423828125
+   },
+   {
+    "id": "movie_48211",
+    "label": "Movie",
+    "score": 0.8537569046020508
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n WHERE n4.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Italy\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Italy\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)\nWHERE ANY(c IN m.countries WHERE trim(c) = 'Italy')\nAND m.year >= 1970 AND m.year <= 1979\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.65,
+  "seconds_text2cypher": 6.47
+ },
+ {
+  "id": "D01",
+  "question": "Movies starring Tom Hanks.",
+  "gold_size": 38,
+  "seeds": [
+   {
+    "id": "person_31",
+    "label": "Actor",
+    "score": 0.881953239440918
+   },
+   {
+    "id": "movie_29968",
+    "label": "Movie",
+    "score": 0.840968132019043
+   },
+   {
+    "id": "person_52503",
+    "label": "Actor",
+    "score": 0.8287982940673828
+   },
+   {
+    "id": "person_1219050",
+    "label": "Actor",
+    "score": 0.8235101699829102
+   },
+   {
+    "id": "movie_40092",
+    "label": "Movie",
+    "score": 0.82080078125
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries MATCH (n2:Movie)\n WHERE \"USA\" IN n2.countries MATCH (n3:Movie)\n WHERE \"USA\" IN n3.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (a:Actor {name: 'Tom Hanks'})-[:ACTED_IN]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.24,
+  "seconds_text2cypher": 3.94
+ },
+ {
+  "id": "D02",
+  "question": "Which films feature Toshiro Mifune?",
+  "gold_size": 14,
+  "seeds": [
+   {
+    "id": "person_7450",
+    "label": "Actor",
+    "score": 0.8851699829101562
+   },
+   {
+    "id": "person_17542",
+    "label": "Director",
+    "score": 0.8229360580444336
+   },
+   {
+    "id": "person_68412",
+    "label": "Director",
+    "score": 0.8208990097045898
+   },
+   {
+    "id": "person_608",
+    "label": "Actor",
+    "score": 0.8196287155151367
+   },
+   {
+    "id": "person_82461",
+    "label": "Director",
+    "score": 0.8119831085205078
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries MATCH (n1:Movie)\n WHERE \"Japan\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor&Director)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries MATCH (n1:Movie)\n WHERE \"Japan\" IN n1.countries MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Director)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n0:Movie)\n WHERE \"Japan\" IN n0.countries\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor&Director) RETURN n LIMIT 200",
+   "MATCH (n:Person&Director) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (p:Person {name: 'Toshiro Mifune'})-[:ACTED_IN]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.17,
+  "seconds_text2cypher": 4.32
+ },
+ {
+  "id": "D03",
+  "question": "Animated movies rated above 8 on IMDb.",
+  "gold_size": 52,
+  "seeds": [
+   {
+    "id": "movie_13716",
+    "label": "Movie",
+    "score": 0.8621530532836914
+   },
+   {
+    "id": "movie_12222",
+    "label": "Movie",
+    "score": 0.8587131500244141
+   },
+   {
+    "id": "movie_51162",
+    "label": "Movie",
+    "score": 0.8584012985229492
+   },
+   {
+    "id": "movie_16636",
+    "label": "Movie",
+    "score": 0.8579826354980469
+   },
+   {
+    "id": "movie_12429",
+    "label": "Movie",
+    "score": 0.8576745986938477
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Genre)\n MATCH (n3:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n MATCH (n5:Genre)\n WHERE n5.name = \"Animation\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor&Director)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n MATCH (n5:Genre)\n WHERE n5.name = \"Animation\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n0:Person&Director)\n MATCH (n1:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Animation\" MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n5:Genre) WHERE n5.name = \"Animation\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n5:Genre) WHERE n5.name = \"Animation\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Animation\" MATCH (n4:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Animation'})\nWHERE m.imdbRating > 8.0\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.47,
+  "seconds_text2cypher": 6.19
+ },
+ {
+  "id": "D04",
+  "question": "Horror films with an IMDb rating of at least 7.5.",
+  "gold_size": 91,
+  "seeds": [
+   {
+    "id": "movie_4247",
+    "label": "Movie",
+    "score": 0.85723876953125
+   },
+   {
+    "id": "movie_11343",
+    "label": "Movie",
+    "score": 0.8568477630615234
+   },
+   {
+    "id": "movie_16281",
+    "label": "Movie",
+    "score": 0.8551149368286133
+   },
+   {
+    "id": "movie_11797",
+    "label": "Movie",
+    "score": 0.8541889190673828
+   },
+   {
+    "id": "movie_4232",
+    "label": "Movie",
+    "score": 0.8520936965942383
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Horror\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Horror\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n WHERE n4.name = \"Horror\" MATCH (n5:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n MATCH (n1:Genre)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor&Director)\n MATCH (n4:Person&Director)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Horror\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Horror\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Horror\" MATCH (n5:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Horror'})\nWHERE m.imdbRating >= 7.5\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.21,
+  "seconds_text2cypher": 7.09
+ },
+ {
+  "id": "D05",
+  "question": "Movies in which Meryl Streep acted.",
+  "gold_size": 34,
+  "seeds": [
+   {
+    "id": "person_5064",
+    "label": "Actor",
+    "score": 0.8725643157958984
+   },
+   {
+    "id": "person_6907",
+    "label": "Actor",
+    "score": 0.8202419281005859
+   },
+   {
+    "id": "person_13963",
+    "label": "Actor",
+    "score": 0.8131418228149414
+   },
+   {
+    "id": "movie_18569",
+    "label": "Movie",
+    "score": 0.8124980926513672
+   },
+   {
+    "id": "person_14702",
+    "label": "Actor",
+    "score": 0.8122196197509766
+   }
+  ],
+  "ucq": " MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Person&Actor)\n MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Person&Actor) WHERE EXISTS { MATCH (n)-[:ACTED_IN]-(n1:Movie) WHERE \"USA\" IN n1.countries } RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Person&Actor) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (p:Person {name: \"Meryl Streep\"})-[:ACTED_IN]->(m:Movie)\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.2,
+  "seconds_text2cypher": 4.74
+ },
+ {
+  "id": "D06",
+  "question": "Movies with dialogue in Japanese that are not from Japan.",
+  "gold_size": 142,
+  "seeds": [
+   {
+    "id": "movie_153",
+    "label": "Movie",
+    "score": 0.8714818954467773
+   },
+   {
+    "id": "movie_20530",
+    "label": "Movie",
+    "score": 0.8701505661010742
+   },
+   {
+    "id": "movie_8392",
+    "label": "Movie",
+    "score": 0.8699522018432617
+   },
+   {
+    "id": "movie_18148",
+    "label": "Movie",
+    "score": 0.8692846298217773
+   },
+   {
+    "id": "movie_31217",
+    "label": "Movie",
+    "score": 0.8686513900756836
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n MATCH (n1:Genre)\n WHERE n1.name = \"Drama\" MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor&Director)\n MATCH (n4:Person&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"Japan\" IN n.countries\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:DIRECTED]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Director)\n MATCH (n3:Genre)\n WHERE n3.name = \"Drama\" MATCH (n4:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE EXISTS { MATCH (n)-[:IN_GENRE]-(n1:Genre) WHERE n1.name = \"Drama\" MATCH (n2:Person&Actor) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"Japan\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Drama\" MATCH (n4:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre), (a:Actor)-[:ACTED_IN]->(m), (d:Director)-[:DIRECTED]->(m)\nWHERE any(l IN m.languages WHERE trim(l) = 'Japanese')\nWITH m, g\nWHERE NOT any(c IN m.countries WHERE trim(c) = 'Japan')\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.13,
+  "seconds_text2cypher": 12.43
+ },
+ {
+  "id": "D07",
+  "question": "Comedies longer than 150 minutes.",
+  "gold_size": 24,
+  "seeds": [
+   {
+    "id": "genre_comedy",
+    "label": "Genre",
+    "score": 0.8471059799194336
+   },
+   {
+    "id": "movie_11624",
+    "label": "Movie",
+    "score": 0.8411903381347656
+   },
+   {
+    "id": "movie_1847",
+    "label": "Movie",
+    "score": 0.8401422500610352
+   },
+   {
+    "id": "movie_15258",
+    "label": "Movie",
+    "score": 0.8367929458618164
+   },
+   {
+    "id": "movie_59572",
+    "label": "Movie",
+    "score": 0.8364858627319336
+   }
+  ],
+  "ucq": " MATCH (n:Genre)\n WHERE n.name = \"Comedy\"\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n0:Movie)\n WHERE \"USA\" IN n0.countries MATCH (n1:Movie)\n WHERE \"USA\" IN n1.countries\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Comedy\"\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Director)\n MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Genre)\n WHERE n4.name = \"Comedy\" MATCH (n5:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:ACTED_IN]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:IN_GENRE]-(n2) MATCH (n0:Person&Actor&Director)\n MATCH (n1:Person&Actor&Director)\n MATCH (n2:Genre)\n\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Genre) WHERE n.name = \"Comedy\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Genre) WHERE n.name = \"Comedy\" RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Comedy\" } RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n4:Genre) WHERE n4.name = \"Comedy\" MATCH (n5:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre {name: 'Comedy'})\nWHERE m.runtime > 150\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 0.99,
+  "seconds_text2cypher": 5.37
+ },
+ {
+  "id": "D08",
+  "question": "Sci-fi movies with Harrison Ford.",
+  "gold_size": 7,
+  "seeds": [
+   {
+    "id": "movie_13001",
+    "label": "Movie",
+    "score": 0.8476591110229492
+   },
+   {
+    "id": "movie_2164",
+    "label": "Movie",
+    "score": 0.8464565277099609
+   },
+   {
+    "id": "movie_152",
+    "label": "Movie",
+    "score": 0.8441295623779297
+   },
+   {
+    "id": "movie_13475",
+    "label": "Movie",
+    "score": 0.843658447265625
+   },
+   {
+    "id": "movie_9872",
+    "label": "Movie",
+    "score": 0.8432178497314453
+   }
+  ],
+  "ucq": " MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Action\" MATCH (n4:Genre)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n WHERE n0.name = \"Adventure\" MATCH (n1:Genre)\n WHERE n1.name = \"Action\" MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n WHERE n0.name = \"Sci-Fi\" MATCH (n1:Genre)\n WHERE n1.name = \"Adventure\" MATCH (n2:Person&Actor&Director)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:IN_GENRE]-(n0) MATCH (n)-[:IN_GENRE]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:DIRECTED]-(n4) MATCH (n0:Genre)\n WHERE n0.name = \"Action\" MATCH (n1:Genre)\n WHERE n1.name = \"Sci-Fi\" MATCH (n2:Person&Actor)\n MATCH (n3:Person&Actor)\n MATCH (n4:Person&Director)\n\n RETURN n\n\nUNION\n\n MATCH (n:Movie)\n WHERE \"USA\" IN n.countries\n  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)\n MATCH (n1:Person&Actor)\n MATCH (n2:Person&Actor)\n MATCH (n3:Genre)\n WHERE n3.name = \"Adventure\" MATCH (n4:Genre)\n WHERE n4.name = \"Sci-Fi\"\n RETURN n",
+  "sadr_impl_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200"
+  ],
+  "sadr_full_queries": [
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Action\" MATCH (n4:Genre) } RETURN n LIMIT 200",
+   "MATCH (n:Movie) RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries RETURN n LIMIT 200",
+   "MATCH (n:Movie) WHERE \"USA\" IN n.countries AND EXISTS { MATCH (n)-[:IN_GENRE]-(n3:Genre) WHERE n3.name = \"Adventure\" MATCH (n4:Genre) } RETURN n LIMIT 200"
+  ],
+  "text2cypher_query": "MATCH (p:Person {name: 'Harrison Ford'})-[:ACTED_IN]->(m:Movie)-[:IN_GENRE {name: 'Sci-Fi'}]->()\nRETURN DISTINCT m\nLIMIT 200",
+  "text2cypher_error": "",
+  "seconds_sadr": 1.22,
+  "seconds_text2cypher": 3.97
+ }
+]

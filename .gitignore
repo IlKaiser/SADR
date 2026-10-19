@@ -1,0 +1,24 @@
+# Credentials
+.env
+*.env
+!.env.example
+
+# Generated outputs
+/trace*.json
+/results/
+seeds.json
+
+# Data dumps (rebuild them, see README)
+data/
+*.dump
+*.backup
+
+# Python and editors
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.virtual_documents/
+.mypy_cache/
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Symbolic-Assisted Dense Retriever (SADR)"
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Calamo
+    given-names: Marco
+  - family-names: Papi
+    given-names: Laura
+  - family-names: Console
+    given-names: Marco
+  - family-names: Mecella
+    given-names: Massimo
+  - family-names: Bianchini
+    given-names: Filippo
+preferred-citation:
+  type: conference-paper
+  title: "Enhancing Retrieval-Augmented Generators with Symbolic Query Definitions"
+  authors:
+    - family-names: Calamo
+      given-names: Marco
+    - family-names: Papi
+      given-names: Laura
+    - family-names: Console
+      given-names: Marco
+    - family-names: Mecella
+      given-names: Massimo
+    - family-names: Bianchini
+      given-names: Filippo
+  collection-title: "Workshop on Neuro-Symbolic Intelligence for LLMs and Autonomous Agents (FLoC 2026 Workshops)"
+  year: 2026

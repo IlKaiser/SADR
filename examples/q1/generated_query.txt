@@ -1,0 +1,56 @@
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Director&Person)
+ MATCH (n1:Actor&Person)
+ MATCH (n2:Actor&Person)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Director&Actor&Person)
+ MATCH (n1:Actor&Person)
+ MATCH (n2:Actor&Person)
+ MATCH (n3:Genre)
+ MATCH (n4:Genre)
+ WHERE n4.genre = "Adventure"
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Director&Person)
+ MATCH (n1:Actor&Person)
+ MATCH (n2:Actor&Person)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Director&Person)
+ MATCH (n1:Actor&Person)
+ MATCH (n2:Actor&Person)
+ MATCH (n3:Genre)
+ MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n0:Director)
+ MATCH (n1:Actor&Person)
+ MATCH (n2:Actor&Person)
+ MATCH (n3:Genre)
+
+ RETURN n

@@ -1,0 +1,160 @@
+{
+ "overall": [
+  {
+   "system": "dense@5",
+   "precision": 0.3592,
+   "recall": 0.0514,
+   "f1": 0.0842,
+   "returned_movies": 4.0526
+  },
+  {
+   "system": "dense@N",
+   "precision": 0.1205,
+   "recall": 0.4531,
+   "f1": 0.1542,
+   "returned_movies": 282.8947
+  },
+  {
+   "system": "sadr_impl",
+   "precision": 0.0959,
+   "recall": 0.2356,
+   "f1": 0.1128,
+   "returned_movies": 225.6053
+  },
+  {
+   "system": "sadr_full",
+   "precision": 0.1155,
+   "recall": 0.3375,
+   "f1": 0.1376,
+   "returned_movies": 282.8421
+  },
+  {
+   "system": "text2cypher",
+   "precision": 0.7021,
+   "recall": 0.6529,
+   "f1": 0.6606,
+   "returned_movies": 31.3684
+  }
+ ],
+ "recall_by_group": [
+  {
+   "system": "dense@5",
+   "country+genre": 0.0559,
+   "director": 0.0414,
+   "time": 0.1051,
+   "not-expressible": 0.0033
+  },
+  {
+   "system": "dense@N",
+   "country+genre": 0.5466,
+   "director": 0.3394,
+   "time": 0.6549,
+   "not-expressible": 0.2531
+  },
+  {
+   "system": "sadr_impl",
+   "country+genre": 0.4499,
+   "director": 0.1463,
+   "time": 0.2178,
+   "not-expressible": 0.0434
+  },
+  {
+   "system": "sadr_full",
+   "country+genre": 0.5334,
+   "director": 0.1859,
+   "time": 0.3807,
+   "not-expressible": 0.1896
+  },
+  {
+   "system": "text2cypher",
+   "country+genre": 0.3182,
+   "director": 0.9,
+   "time": 0.75,
+   "not-expressible": 0.7491
+  }
+ ],
+ "paired_tests": [
+  {
+   "a": "sadr_full",
+   "b": "dense@5",
+   "metric": "recall",
+   "mean_diff": 0.286,
+   "wins": 29,
+   "losses": 4,
+   "p": 0.0
+  },
+  {
+   "a": "sadr_full",
+   "b": "dense@5",
+   "metric": "f1",
+   "mean_diff": 0.053,
+   "wins": 20,
+   "losses": 13,
+   "p": 0.2831
+  },
+  {
+   "a": "sadr_full",
+   "b": "dense@N",
+   "metric": "recall",
+   "mean_diff": -0.116,
+   "wins": 13,
+   "losses": 19,
+   "p": 0.0167
+  },
+  {
+   "a": "sadr_full",
+   "b": "dense@N",
+   "metric": "f1",
+   "mean_diff": -0.017,
+   "wins": 13,
+   "losses": 19,
+   "p": 0.1389
+  },
+  {
+   "a": "sadr_full",
+   "b": "sadr_impl",
+   "metric": "recall",
+   "mean_diff": 0.102,
+   "wins": 13,
+   "losses": 2,
+   "p": 0.0078
+  },
+  {
+   "a": "sadr_full",
+   "b": "sadr_impl",
+   "metric": "f1",
+   "mean_diff": 0.025,
+   "wins": 14,
+   "losses": 3,
+   "p": 0.0077
+  },
+  {
+   "a": "text2cypher",
+   "b": "sadr_full",
+   "metric": "recall",
+   "mean_diff": 0.315,
+   "wins": 23,
+   "losses": 11,
+   "p": 0.0056
+  },
+  {
+   "a": "text2cypher",
+   "b": "sadr_full",
+   "metric": "f1",
+   "mean_diff": 0.523,
+   "wins": 27,
+   "losses": 9,
+   "p": 0.0
+  }
+ ],
+ "dense_recall_at_k": {
+  "recall@10": 0.0918,
+  "recall@100": 0.3336,
+  "recall@20": 0.1345,
+  "recall@200": 0.4407,
+  "recall@5": 0.0562,
+  "recall@50": 0.2243
+ },
+ "text2cypher_errors": 5,
+ "questions": 38
+}

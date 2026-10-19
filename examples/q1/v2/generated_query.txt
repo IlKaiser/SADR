@@ -1,0 +1,134 @@
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:RATED]-(n5) MATCH (n)-[:RATED]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+ MATCH (n5:)
+ MATCH (n6:)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:RATED]-(n5) MATCH (n)-[:RATED]-(n6) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+ MATCH (n5:)
+ MATCH (n6:)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:RATED]-(n5) MATCH (n)-[:RATED]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor&Director)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ MATCH (n4:Genre)
+ WHERE n4.genre = "Adventure" MATCH (n5:)
+ MATCH (n6:)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:DIRECTED]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:ACTED_IN]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n)-[:RATED]-(n6) MATCH (n)-[:RATED]-(n7) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Director)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Person&Actor)
+ MATCH (n4:Genre)
+ WHERE n4.genre = "Adventure" MATCH (n5:Genre)
+ MATCH (n6:)
+ MATCH (n7:)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:IN_GENRE]-(n3) MATCH (n)-[:IN_GENRE]-(n4) MATCH (n0:Person&Director)
+ MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:Genre)
+ WHERE n3.genre = "Adventure" MATCH (n4:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:RATED]-(n3) MATCH (n)-[:RATED]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n)-[:IN_GENRE]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:)
+ MATCH (n4:)
+ MATCH (n5:Genre)
+ WHERE n5.genre = "Adventure" MATCH (n6:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:RATED]-(n3) MATCH (n)-[:RATED]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n)-[:IN_GENRE]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:)
+ MATCH (n4:)
+ MATCH (n5:Genre)
+ WHERE n5.genre = "Adventure" MATCH (n6:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:RATED]-(n3) MATCH (n)-[:RATED]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n)-[:IN_GENRE]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:)
+ MATCH (n4:)
+ MATCH (n5:Genre)
+ WHERE n5.genre = "Adventure" MATCH (n6:Genre)
+
+ RETURN n
+
+UNION
+
+ MATCH (n:Movie)
+ WHERE "Japan" IN n.countries
+  MATCH (n)-[:DIRECTED]-(n0) MATCH (n)-[:ACTED_IN]-(n1) MATCH (n)-[:ACTED_IN]-(n2) MATCH (n)-[:RATED]-(n3) MATCH (n)-[:RATED]-(n4) MATCH (n)-[:IN_GENRE]-(n5) MATCH (n)-[:IN_GENRE]-(n6) MATCH (n0:Person&Director)
+ WHERE n0.name = "Hayao Miyazaki" MATCH (n1:Person&Actor)
+ MATCH (n2:Person&Actor)
+ MATCH (n3:)
+ MATCH (n4:)
+ MATCH (n5:Genre)
+ WHERE n5.genre = "Adventure" MATCH (n6:Genre)
+
+ RETURN n

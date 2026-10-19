@@ -1,0 +1,23 @@
+# Python 3.10+ (tested with Python 3.10.16 on macOS)
+
+# Neo4j driver
+neo4j==5.28.2
+
+# LlamaIndex core and integrations
+llama-index-core==0.14.8
+llama-index-graph-stores-neo4j==0.5.1
+llama-index-embeddings-huggingface==0.6.1
+
+# Embedding model (downloaded on first use)
+sentence-transformers==5.1.1
+transformers==4.57.1
+torch==2.8.0
+
+# Demo app and LLM calls (Ollama HTTP API)
+streamlit==1.44.1
+requests==2.32.3
+
+# Benchmark analysis
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3

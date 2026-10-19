@@ -1,0 +1,1801 @@
+{
+  "query": "Horror Japanese Movies",
+  "query_embedding": {
+    "preview": [
+      -0.054164595901966095,
+      -0.0013339262222871184,
+      -0.017536913976073265,
+      0.01478668674826622,
+      0.03312118723988533,
+      0.030883044004440308,
+      0.017111076042056084,
+      -0.018153542652726173
+    ],
+    "dimension": 384
+  },
+  "retrieval_config": {
+    "similarity_top_k": 5,
+    "path_depth": 1,
+    "include_text": false,
+    "embed_provider": "huggingface",
+    "embed_model_name": "BAAI/bge-small-en-v1.5"
+  },
+  "seed_nodes": {
+    "count": 5,
+    "nodes": [
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 1968,
+          "imdbId": "tt0200301",
+          "release": "1968-03-20",
+          "runtime": 79,
+          "imdbRating": 6.5,
+          "countries": [
+            "Japan"
+          ],
+          "title": "Yokai Monsters: 100 Monsters",
+          "imdbVotes": "1105",
+          "movieLensId": "266550",
+          "tmdbId": 91756,
+          "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+          "originalTitle": "Yôkai hyakumonogatari",
+          "genres": "Horror",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+          "imdbIdInt": "0200301",
+          "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+        },
+        "similarity_score": 0.8989197015762329
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 1969,
+          "imdbId": "tt0202627",
+          "runtime": 78,
+          "imdbRating": 6.3,
+          "countries": [
+            "Japan"
+          ],
+          "title": "Yokai Monsters: Along with Ghosts",
+          "imdbVotes": "521",
+          "movieLensId": "266554",
+          "tmdbId": 76818,
+          "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+          "originalTitle": "Tôkaidô obake dôchû",
+          "genres": "Action,Horror,Mystery",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+          "imdbIdInt": "0202627",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+        },
+        "similarity_score": 0.8947804570198059
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2001,
+          "imdbId": "tt0450497",
+          "release": "2001-03-24",
+          "runtime": 95,
+          "imdbRating": 6.2,
+          "countries": [
+            "Japan"
+          ],
+          "title": "Love Ghost",
+          "imdbVotes": "381",
+          "movieLensId": "103328",
+          "tmdbId": 153420,
+          "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+          "originalTitle": "Shibito no koiwazurai",
+          "genres": "Horror",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+          "imdbIdInt": "0450497",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+        },
+        "similarity_score": 0.8907735347747803
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2014,
+          "imdbId": "tt2916416",
+          "release": "2014-08-23",
+          "runtime": 93,
+          "imdbRating": 6.1,
+          "countries": [
+            "Japan",
+            "France",
+            "China"
+          ],
+          "title": "Over Your Dead Body",
+          "imdbVotes": "1680",
+          "movieLensId": "120930",
+          "tmdbId": 199925,
+          "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+          "originalTitle": "Kuime",
+          "genres": "Drama,Horror,Thriller",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+          "imdbIdInt": "2916416",
+          "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+        },
+        "similarity_score": 0.8896792531013489
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94177",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2005,
+          "imdbId": "tt0456630",
+          "release": "2006-01-07",
+          "runtime": 96,
+          "imdbRating": 6.1,
+          "countries": [
+            "Japan"
+          ],
+          "title": "Reincarnation",
+          "imdbVotes": "7023",
+          "movieLensId": "54349",
+          "revenue": "$321,875",
+          "tmdbId": 14217,
+          "plot": "A Japanese actress begins having strange visions and experiences after landing a role in a horror film about a real-life murder spree that took place over forty years ago.",
+          "originalTitle": "Rinne",
+          "genres": "Horror,Mystery",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0456630\",\"release\":\"2006-01-07\",\"runtime\":96,\"imdbRating\":6.1,\"countries\":[\"Japan\"],\"title\":\"Reincarnation\",\"imdbVotes\":\"7023\",\"movieLensId\":\"54349\",\"revenue\":\"$321,875\",\"tmdbId\":14217,\"plot\":\"A Japanese actress begins having strange visions and experiences after landing a role in a horror film about a real-life murder spree that took place over forty years ago.\",\"originalTitle\":\"Rinne\",\"genres\":\"Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0456630\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BN2Q0OTg0YTctNjFkZS00OGQ4LTllNDctNzdhMDY0MjAyNjUwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:55.977Z\"}",
+          "imdbIdInt": "0456630",
+          "poster": "https://m.media-amazon.com/images/M/MV5BN2Q0OTg0YTctNjFkZS00OGQ4LTllNDctNzdhMDY0MjAyNjUwXkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:55.977000000+00:00"
+        },
+        "similarity_score": 0.8871194124221802
+      }
+    ]
+  },
+  "graph_expansion": {
+    "mode": "paths_up_to_depth_1",
+    "count": 30,
+    "triplets": [
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46230",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,writer",
+            "imdbId": "nm0946638",
+            "retrieval_text": "{\"primaryProfession\":\"director,writer\",\"imdbId\":\"nm0946638\",\"born\":1911,\"name\":\"Kimiyoshi Yasuda\",\"knownForTitles\":\"tt0066602,tt0496467,tt0229511,tt0164984\",\"died\":1983,\"is_director\":true}",
+            "born": 1911,
+            "name": "Kimiyoshi Yasuda",
+            "knownForTitles": "tt0066602,tt0496467,tt0229511,tt0164984",
+            "died": 1983,
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46230",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "11"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5714",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T19:31:41.890000000+00:00",
+            "primaryProfession": "actor",
+            "imdbId": "nm0327104",
+            "born": 1933,
+            "died": 2013,
+            "birthYear": "1933",
+            "deathYear": "2013",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T19:31:41.890Z\",\"birthYear\":\"1933\",\"primaryProfession\":\"actor\",\"deathYear\":\"2013\",\"imdbId\":\"nm0327104\",\"born\":1933,\"movieCount\":10.0,\"name\":\"Ryûtarô Gomi\",\"knownForTitles\":\"tt0056058,tt0989708,tt0989709,tt0164983\",\"died\":2013}",
+            "movieCount": 10.0,
+            "name": "Ryûtarô Gomi",
+            "knownForTitles": "tt0056058,tt0989708,tt0989709,tt0164983"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5714",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Hotta Buzennokami\"]",
+            "category": "actor"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:13322",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm0357307",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm0357307\",\"born\":1906,\"movieCount\":21.0,\"name\":\"Jun Hamamura\",\"knownForTitles\":\"tt0057565,tt0059080,tt0211346,tt0165218\",\"is_actor\":true,\"died\":1995}",
+            "born": 1906,
+            "movieCount": 21.0,
+            "name": "Jun Hamamura",
+            "knownForTitles": "tt0057565,tt0059080,tt0211346,tt0165218",
+            "is_actor": true,
+            "died": 1995
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:13322",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Gohei\"]",
+            "ordering": "10"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:15746",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0386217",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0386217\",\"born\":1944,\"movieCount\":18.0,\"name\":\"Sei Hiraizumi\",\"knownForTitles\":\"tt4262980,tt0408664,tt0098360,tt0912597\",\"is_actor\":true}",
+            "born": 1944,
+            "movieCount": 18.0,
+            "name": "Sei Hiraizumi",
+            "knownForTitles": "tt4262980,tt0408664,tt0098360,tt0912597",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:15746",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Takichi\"]",
+            "ordering": "3"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:26208",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm0437176",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm0437176\",\"born\":1918,\"movieCount\":5.0,\"name\":\"Takashi Kanda\",\"knownForTitles\":\"tt0224597,tt0224110,tt0156214,tt6586692\",\"is_actor\":true,\"died\":1986}",
+            "born": 1918,
+            "movieCount": 5.0,
+            "name": "Takashi Kanda",
+            "knownForTitles": "tt0224597,tt0224110,tt0156214,tt6586692",
+            "is_actor": true,
+            "died": 1986
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:26208",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Reimon Tajimaya\"]",
+            "ordering": "7"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38989",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-03T00:14:06.468000000+00:00",
+            "birthYear": "1940",
+            "primaryProfession": "actress",
+            "imdbId": "nm0875207",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-03T00:14:06.468Z\",\"birthYear\":\"1940\",\"primaryProfession\":\"actress\",\"imdbId\":\"nm0875207\",\"born\":1940,\"movieCount\":4.0,\"name\":\"Mikiko Tsubouchi\",\"knownForTitles\":\"tt0063834,tt0200301,tt0130377,tt0123335\"}",
+            "born": 1940,
+            "movieCount": 4.0,
+            "name": "Mikiko Tsubouchi",
+            "knownForTitles": "tt0063834,tt0200301,tt0130377,tt0123335"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38989",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Osen\"]",
+            "category": "actress"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:43963",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-03T00:10:39.030000000+00:00",
+            "birthYear": "1947",
+            "primaryProfession": "actress",
+            "imdbId": "nm0847033",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-03T00:10:39.030Z\",\"birthYear\":\"1947\",\"primaryProfession\":\"actress\",\"imdbId\":\"nm0847033\",\"born\":1947,\"movieCount\":5.0,\"name\":\"Miwa Takada\",\"knownForTitles\":\"tt0104570,tt0057715,tt2629094,tt0186606\"}",
+            "born": 1947,
+            "movieCount": 5.0,
+            "name": "Miwa Takada",
+            "knownForTitles": "tt0104570,tt0057715,tt2629094,tt0186606"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:43963",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Okiku\"]",
+            "category": "actress"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46153",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0948949",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0948949\",\"born\":1911,\"movieCount\":5.0,\"name\":\"Yoshio Yoshida\",\"knownForTitles\":\"tt0059080,tt0989708,tt0057714,tt0989709\",\"is_actor\":true,\"died\":1986}",
+            "born": 1911,
+            "movieCount": 5.0,
+            "name": "Yoshio Yoshida",
+            "knownForTitles": "tt0059080,tt0989708,tt0057714,tt0989709",
+            "is_actor": true,
+            "died": 1986
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46153",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Jusuke\"]",
+            "ordering": "9"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1968,
+            "imdbId": "tt0200301",
+            "release": "1968-03-20",
+            "runtime": 79,
+            "imdbRating": 6.5,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: 100 Monsters",
+            "imdbVotes": "1105",
+            "movieLensId": "266550",
+            "tmdbId": 91756,
+            "plot": "The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.",
+            "originalTitle": "Yôkai hyakumonogatari",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1968,\"imdbId\":\"tt0200301\",\"release\":\"1968-03-20\",\"runtime\":79,\"imdbRating\":6.5,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: 100 Monsters\",\"imdbVotes\":\"1105\",\"movieLensId\":\"266550\",\"tmdbId\":91756,\"plot\":\"The local yôkai (Japanese spirits) interfere to avenge a murder and thwart the plans of corrupt officials.\",\"originalTitle\":\"Yôkai hyakumonogatari\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0200301\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0200301",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzkzZGYyY2MtZTY1ZS00ZWQxLTkxZTEtZDZlMWEwNmRlMDI4XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:82469",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Horror\"}",
+            "genre": "Horror"
+          }
+        },
+        "score": 0.8989197015762329
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21524",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,special_effects,assistant_director",
+            "imdbId": "nm0475852",
+            "retrieval_text": "{\"primaryProfession\":\"director,special_effects,assistant_director\",\"imdbId\":\"nm0475852\",\"born\":1928,\"name\":\"Yoshiyuki Kuroda\",\"knownForTitles\":\"tt0125937,tt0188242,tt0071695,tt0359972\",\"died\":2015,\"is_director\":true}",
+            "born": 1928,
+            "name": "Yoshiyuki Kuroda",
+            "knownForTitles": "tt0125937,tt0188242,tt0071695,tt0359972",
+            "died": 2015,
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21524",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "11"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46230",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,writer",
+            "imdbId": "nm0946638",
+            "retrieval_text": "{\"primaryProfession\":\"director,writer\",\"imdbId\":\"nm0946638\",\"born\":1911,\"name\":\"Kimiyoshi Yasuda\",\"knownForTitles\":\"tt0066602,tt0496467,tt0229511,tt0164984\",\"died\":1983,\"is_director\":true}",
+            "born": 1911,
+            "name": "Kimiyoshi Yasuda",
+            "knownForTitles": "tt0066602,tt0496467,tt0229511,tt0164984",
+            "died": 1983,
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:46230",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "12"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5475",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0202135",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0202135\",\"born\":1924,\"movieCount\":17.0,\"name\":\"Saburô Date\",\"knownForTitles\":\"tt0046478,tt0211346,tt0201627,tt0123188\",\"is_actor\":true,\"died\":1991}",
+            "born": 1924,
+            "movieCount": 17.0,
+            "name": "Saburô Date",
+            "knownForTitles": "tt0046478,tt0211346,tt0201627,tt0123188",
+            "is_actor": true,
+            "died": 1991
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5475",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "ACTED_IN",
+          "properties": {
+            "ordering": "8"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5714",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T19:31:41.890000000+00:00",
+            "primaryProfession": "actor",
+            "imdbId": "nm0327104",
+            "born": 1933,
+            "died": 2013,
+            "birthYear": "1933",
+            "deathYear": "2013",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T19:31:41.890Z\",\"birthYear\":\"1933\",\"primaryProfession\":\"actor\",\"deathYear\":\"2013\",\"imdbId\":\"nm0327104\",\"born\":1933,\"movieCount\":10.0,\"name\":\"Ryûtarô Gomi\",\"knownForTitles\":\"tt0056058,tt0989708,tt0989709,tt0164983\",\"died\":2013}",
+            "movieCount": 10.0,
+            "name": "Ryûtarô Gomi",
+            "knownForTitles": "tt0056058,tt0989708,tt0989709,tt0164983"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:5714",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "ACTED_IN",
+          "properties": {
+            "category": "actor"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:14426",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0393291",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0393291\",\"born\":1938,\"movieCount\":11.0,\"name\":\"Kôjirô Hongô\",\"knownForTitles\":\"tt0054706,tt0409866,tt0166736,tt0166680\",\"is_actor\":true,\"died\":2013}",
+            "born": 1938,
+            "movieCount": 11.0,
+            "name": "Kôjirô Hongô",
+            "knownForTitles": "tt0054706,tt0409866,tt0166736,tt0166680",
+            "is_actor": true,
+            "died": 2013
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:14426",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Hyakutaro\"]",
+            "ordering": "1"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:19094",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0383091",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0383091\",\"born\":1894,\"movieCount\":4.0,\"name\":\"Bokuzen Hidari\",\"knownForTitles\":\"tt0047478,tt0044741,tt0050330,tt0043707\",\"is_actor\":true,\"died\":1971}",
+            "born": 1894,
+            "movieCount": 4.0,
+            "name": "Bokuzen Hidari",
+            "knownForTitles": "tt0047478,tt0044741,tt0050330,tt0043707",
+            "is_actor": true,
+            "died": 1971
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:19094",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Jinbei\"]",
+            "ordering": "6"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:42151",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm0869601",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm0869601\",\"born\":1930,\"movieCount\":13.0,\"name\":\"Rokkô Toura\",\"knownForTitles\":\"tt0283693,tt0054366,tt0085933,tt0067755\",\"is_actor\":true,\"died\":1993}",
+            "born": 1930,
+            "movieCount": 13.0,
+            "name": "Rokkô Toura",
+            "knownForTitles": "tt0283693,tt0054366,tt0085933,tt0067755",
+            "is_actor": true,
+            "died": 1993
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:42151",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Saikichi\"]",
+            "ordering": "5"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Horror\"}",
+            "genre": "Horror"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107905",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107905",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Mystery\"}",
+            "genre": "Mystery"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 1969,
+            "imdbId": "tt0202627",
+            "runtime": 78,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Yokai Monsters: Along with Ghosts",
+            "imdbVotes": "521",
+            "movieLensId": "266554",
+            "tmdbId": 76818,
+            "plot": "The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)",
+            "originalTitle": "Tôkaidô obake dôchû",
+            "genres": "Action,Horror,Mystery",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":1969,\"imdbId\":\"tt0202627\",\"runtime\":78,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"Yokai Monsters: Along with Ghosts\",\"imdbVotes\":\"521\",\"movieLensId\":\"266554\",\"tmdbId\":76818,\"plot\":\"The murder of an old man on sacred grounds provokes the intervention of vengeful yôkai (Japanese spirits.)\",\"originalTitle\":\"Tôkaidô obake dôchû\",\"genres\":\"Action,Horror,Mystery\",\"movieCount\":0.0,\"imdbIdInt\":\"0202627\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.736Z\"}",
+            "imdbIdInt": "0202627",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDkzYjdjOTUtYmI5MC00MGZmLThmN2YtMjc2NDEyNTcxZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.736000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:80550",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Action\"}",
+            "genre": "Action"
+          }
+        },
+        "score": 0.8947804570198059
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:59874",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,miscellaneous",
+            "imdbId": "nm1562489",
+            "retrieval_text": "{\"primaryProfession\":\"director,miscellaneous\",\"imdbId\":\"nm1562489\",\"name\":\"Kazuyuki Shibuya\",\"knownForTitles\":\"tt0450497,tt6771056,tt0891521,tt0277647\",\"is_director\":true}",
+            "name": "Kazuyuki Shibuya",
+            "knownForTitles": "tt0450497,tt6771056,tt0891521,tt0277647",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:59874",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "11"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0450497",
+            "release": "2001-03-24",
+            "runtime": 95,
+            "imdbRating": 6.2,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Love Ghost",
+            "imdbVotes": "381",
+            "movieLensId": "103328",
+            "tmdbId": 153420,
+            "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+            "originalTitle": "Shibito no koiwazurai",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+            "imdbIdInt": "0450497",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+          }
+        },
+        "score": 0.8907735347747803
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:14415",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm0393093",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm0393093\",\"born\":1951,\"movieCount\":10.0,\"name\":\"Hirotarô Honda\",\"knownForTitles\":\"tt2632184,tt1808153,tt0113306,tt0875947\",\"is_actor\":true}",
+            "born": 1951,
+            "movieCount": 10.0,
+            "name": "Hirotarô Honda",
+            "knownForTitles": "tt2632184,tt1808153,tt0113306,tt0875947",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:14415",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"A doctor\"]",
+            "ordering": "5"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0450497",
+            "release": "2001-03-24",
+            "runtime": 95,
+            "imdbRating": 6.2,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Love Ghost",
+            "imdbVotes": "381",
+            "movieLensId": "103328",
+            "tmdbId": 153420,
+            "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+            "originalTitle": "Shibito no koiwazurai",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+            "imdbIdInt": "0450497",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+          }
+        },
+        "score": 0.8907735347747803
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21230",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0559430",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0559430\",\"born\":1983,\"movieCount\":32.0,\"name\":\"Ryûhei Matsuda\",\"knownForTitles\":\"tt2315226,tt0213682,tt2265171,tt0309291\",\"is_actor\":true}",
+            "born": 1983,
+            "movieCount": 32.0,
+            "name": "Ryûhei Matsuda",
+            "knownForTitles": "tt2315226,tt0213682,tt2265171,tt0309291",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21230",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Shibayama Ryuuhei\"]",
+            "ordering": "10"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0450497",
+            "release": "2001-03-24",
+            "runtime": 95,
+            "imdbRating": 6.2,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Love Ghost",
+            "imdbVotes": "381",
+            "movieLensId": "103328",
+            "tmdbId": 153420,
+            "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+            "originalTitle": "Shibito no koiwazurai",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+            "imdbIdInt": "0450497",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+          }
+        },
+        "score": 0.8907735347747803
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:102982",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T00:55:23.745000000+00:00",
+            "primaryProfession": "actress,director,writer",
+            "imdbId": "nm0015440",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T00:55:23.745Z\",\"primaryProfession\":\"actress,director,writer\",\"imdbId\":\"nm0015440\",\"born\":1954,\"movieCount\":4.0,\"name\":\"Kumiko Akiyoshi\",\"knownForTitles\":\"tt0202229,tt0125217,tt0318661,tt0400207\",\"is_actor\":true}",
+            "born": 1954,
+            "movieCount": 4.0,
+            "name": "Kumiko Akiyoshi",
+            "knownForTitles": "tt0202229,tt0125217,tt0318661,tt0400207",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:102982",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Kazuko\"]",
+            "category": "actress"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0450497",
+            "release": "2001-03-24",
+            "runtime": 95,
+            "imdbRating": 6.2,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Love Ghost",
+            "imdbVotes": "381",
+            "movieLensId": "103328",
+            "tmdbId": 153420,
+            "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+            "originalTitle": "Shibito no koiwazurai",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+            "imdbIdInt": "0450497",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+          }
+        },
+        "score": 0.8907735347747803
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0450497",
+            "release": "2001-03-24",
+            "runtime": 95,
+            "imdbRating": 6.2,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Love Ghost",
+            "imdbVotes": "381",
+            "movieLensId": "103328",
+            "tmdbId": 153420,
+            "plot": "Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...",
+            "originalTitle": "Shibito no koiwazurai",
+            "genres": "Horror",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0450497\",\"release\":\"2001-03-24\",\"runtime\":95,\"imdbRating\":6.2,\"countries\":[\"Japan\"],\"title\":\"Love Ghost\",\"imdbVotes\":\"381\",\"movieLensId\":\"103328\",\"tmdbId\":153420,\"plot\":\"Teenager Midori's family moves back to the city where she lived as a child and is relieved to discover that her old friend Ryusuke still lives there. Her terrifying nightmares begin intersecting with her everyday life. Do her nigh...\",\"originalTitle\":\"Shibito no koiwazurai\",\"genres\":\"Horror\",\"movieCount\":0.0,\"imdbIdInt\":\"0450497\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.185Z\"}",
+            "imdbIdInt": "0450497",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTgxNzkyMjQ0MV5BMl5BanBnXkFtZTcwNjMwNzczMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.185000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87840",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107705",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Horror\"}",
+            "genre": "Horror"
+          }
+        },
+        "score": 0.8907735347747803
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107403",
+          "label": "Actor",
+          "properties": {
+            "createdAt": "2025-12-02T01:18:14.903000000+00:00",
+            "primaryProfession": "director,producer,actor",
+            "imdbId": "nm0586281",
+            "retrieval_text": "{\"createdAt\":\"2025-12-02T01:18:14.903Z\",\"primaryProfession\":\"director,producer,actor\",\"imdbId\":\"nm0586281\",\"born\":1960,\"movieCount\":1.0,\"name\":\"Takashi Miike\",\"knownForTitles\":\"tt0235198,tt0296042,tt1436045,tt0290329\",\"is_director\":true}",
+            "born": 1960,
+            "movieCount": 1.0,
+            "name": "Takashi Miike",
+            "knownForTitles": "tt0235198,tt0296042,tt1436045,tt0290329",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107403",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "DIRECTED",
+          "properties": {
+            "createdAt": "2025-12-02T01:18:28.337000000+00:00"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21864",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm0411692",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm0411692\",\"born\":1975,\"movieCount\":12.0,\"name\":\"Hideaki Itô\",\"knownForTitles\":\"tt2887954,tt2294473,tt32237534,tt13872286\",\"is_actor\":true}",
+            "born": 1975,
+            "movieCount": 12.0,
+            "name": "Hideaki Itô",
+            "knownForTitles": "tt2887954,tt2294473,tt32237534,tt13872286",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21864",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Jun Suzuki\"]",
+            "ordering": "4"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:23778",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm0441550",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm0441550\",\"born\":1949,\"movieCount\":5.0,\"name\":\"Hiroshi Katsuno\",\"knownForTitles\":\"tt0468846,tt0313603,tt0080962,tt0172055\",\"is_actor\":true}",
+            "born": 1949,
+            "movieCount": 5.0,
+            "name": "Hiroshi Katsuno",
+            "knownForTitles": "tt0468846,tt0313603,tt0080962,tt0172055",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:23778",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Michizaburou Ogata\"]",
+            "ordering": "15"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:35734",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,archive_footage",
+            "imdbId": "nm0624383",
+            "retrieval_text": "{\"primaryProfession\":\"actress,archive_footage\",\"imdbId\":\"nm0624383\",\"born\":1954,\"movieCount\":14.0,\"name\":\"Toshie Negishi\",\"knownForTitles\":\"tt0235198,tt3398268,tt0100998,tt0468846\",\"is_actor\":true}",
+            "born": 1954,
+            "movieCount": 14.0,
+            "name": "Toshie Negishi",
+            "knownForTitles": "tt0235198,tt3398268,tt0100998,tt0468846",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:35734",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Misuzu Horiuchi\"]",
+            "ordering": "8"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38464",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,music_department,soundtrack",
+            "imdbId": "nm0793069",
+            "retrieval_text": "{\"primaryProfession\":\"actress,music_department,soundtrack\",\"imdbId\":\"nm0793069\",\"born\":1981,\"movieCount\":14.0,\"name\":\"Kô Shibasaki\",\"knownForTitles\":\"tt0266308,tt1335975,tt0299937,tt0780503\",\"is_actor\":true}",
+            "born": 1981,
+            "movieCount": 14.0,
+            "name": "Kô Shibasaki",
+            "knownForTitles": "tt0266308,tt1335975,tt0299937,tt0780503",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38464",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Miyuki Goto\"]",
+            "ordering": "2"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:59349",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,archive_footage",
+            "imdbId": "nm1323142",
+            "retrieval_text": "{\"primaryProfession\":\"actor,archive_footage\",\"imdbId\":\"nm1323142\",\"born\":1977,\"movieCount\":1.0,\"name\":\"Ebizô Ichikawa\",\"knownForTitles\":\"tt5084170,tt0353079,tt1728196,tt2500392\",\"is_actor\":true}",
+            "born": 1977,
+            "movieCount": 1.0,
+            "name": "Ebizô Ichikawa",
+            "knownForTitles": "tt5084170,tt0353079,tt1728196,tt2500392",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:59349",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Tamiya Iemon\"]",
+            "ordering": "6"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:100184",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2014,
+            "imdbId": "tt2916416",
+            "release": "2014-08-23",
+            "runtime": 93,
+            "imdbRating": 6.1,
+            "countries": [
+              "Japan",
+              "France",
+              "China"
+            ],
+            "title": "Over Your Dead Body",
+            "imdbVotes": "1680",
+            "movieLensId": "120930",
+            "tmdbId": 199925,
+            "plot": "Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.",
+            "originalTitle": "Kuime",
+            "genres": "Drama,Horror,Thriller",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2014,\"imdbId\":\"tt2916416\",\"release\":\"2014-08-23\",\"runtime\":93,\"imdbRating\":6.1,\"countries\":[\"Japan\",\"France\",\"China\"],\"title\":\"Over Your Dead Body\",\"imdbVotes\":\"1680\",\"movieLensId\":\"120930\",\"tmdbId\":199925,\"plot\":\"Fiction begins to bleed into reality for actors (Ebizo Ichikawa, Ko Shibasaki, Hideaki Ito) as they rehearse a stage production of a classic Japanese ghost story.\",\"originalTitle\":\"Kuime\",\"genres\":\"Drama,Horror,Thriller\",\"movieCount\":0.0,\"imdbIdInt\":\"2916416\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.315Z\"}",
+            "imdbIdInt": "2916416",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDU1NTdjZTMtZWE2My00ZWUxLTlhMjMtN2ZjNDc1M2E2OWE2XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.315000000+00:00"
+          }
+        },
+        "score": 0.8896792531013489
+      }
+    ]
+  }
+}

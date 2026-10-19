@@ -1,0 +1,1773 @@
+{
+  "query": "What are the best animated movies from Japan?",
+  "query_embedding": {
+    "preview": [
+      -0.07348234206438065,
+      -0.049588728696107864,
+      -0.01587720960378647,
+      0.026781467720866203,
+      0.027255279943346977,
+      0.05621936544775963,
+      -0.044345609843730927,
+      0.04881305992603302
+    ],
+    "dimension": 384
+  },
+  "retrieval_config": {
+    "similarity_top_k": 5,
+    "path_depth": 1,
+    "include_text": false,
+    "embed_provider": "huggingface",
+    "embed_model_name": "BAAI/bge-small-en-v1.5"
+  },
+  "seed_nodes": {
+    "count": 5,
+    "nodes": [
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2009,
+          "imdbId": "tt1485763",
+          "release": "2013-11-19",
+          "runtime": 113,
+          "imdbRating": 7.4,
+          "countries": [
+            "Japan"
+          ],
+          "title": "One Piece: Strong World",
+          "imdbVotes": "8115",
+          "movieLensId": "106471",
+          "tmdbId": 41498,
+          "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+          "originalTitle": "Wan pisu firumu: sutorongu warudo",
+          "genres": "Action,Adventure,Animation",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+          "imdbIdInt": "1485763",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+        },
+        "similarity_score": 0.8332403898239136
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2005,
+          "imdbId": "tt0425661",
+          "release": "2005-08-06",
+          "runtime": 124,
+          "imdbRating": 6.3,
+          "countries": [
+            "Japan"
+          ],
+          "title": "The Great Yokai War",
+          "imdbVotes": "2820",
+          "movieLensId": "39801",
+          "tmdbId": 42000,
+          "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+          "originalTitle": "Yôkai daisensô",
+          "genres": "Adventure,Family,Fantasy",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+          "imdbIdInt": "0425661",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "budget": 1300000000.0,
+          "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+        },
+        "similarity_score": 0.831308126449585
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2001,
+          "imdbId": "tt0322645",
+          "release": "2005-05-25",
+          "runtime": 100,
+          "imdbRating": 7.1,
+          "countries": [
+            "Japan"
+          ],
+          "title": "Inuyasha the Movie: Affections Touching Across Time",
+          "imdbVotes": "2989",
+          "movieLensId": "187025",
+          "tmdbId": 42360,
+          "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+          "originalTitle": "Inuyasha: Toki o koeru omoi",
+          "genres": "Action,Adventure,Animation",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+          "imdbIdInt": "0322645",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+        },
+        "similarity_score": 0.8281440734863281
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87880",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2002,
+          "imdbId": "tt0359692",
+          "release": "2003-01-18",
+          "runtime": 143,
+          "imdbRating": 7.4,
+          "countries": [
+            "Japan"
+          ],
+          "title": "When the Last Sword Is Drawn",
+          "imdbVotes": "5525",
+          "movieLensId": "27760",
+          "tmdbId": 14455,
+          "plot": "A samurai goes to extraordinary lengths to provide for his family.",
+          "originalTitle": "Mibu gishi den",
+          "genres": "Drama,History",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2002,\"imdbId\":\"tt0359692\",\"release\":\"2003-01-18\",\"runtime\":143,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"When the Last Sword Is Drawn\",\"imdbVotes\":\"5525\",\"movieLensId\":\"27760\",\"tmdbId\":14455,\"plot\":\"A samurai goes to extraordinary lengths to provide for his family.\",\"originalTitle\":\"Mibu gishi den\",\"genres\":\"Drama,History\",\"movieCount\":0.0,\"imdbIdInt\":\"0359692\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTI1MTM1OTcyMF5BMl5BanBnXkFtZTcwODYxMDYzMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":4000000.0,\"updatedAt\":\"2025-12-16T11:53:55.902Z\"}",
+          "imdbIdInt": "0359692",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMTI1MTM1OTcyMF5BMl5BanBnXkFtZTcwODYxMDYzMQ@@._V1_SX300.jpg",
+          "isAdult": "0",
+          "budget": 4000000.0,
+          "updatedAt": "2025-12-16T11:53:55.902000000+00:00"
+        },
+        "similarity_score": 0.8263710141181946
+      },
+      {
+        "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:104402",
+        "label": "Movie",
+        "properties": {
+          "languages": [
+            "Japanese"
+          ],
+          "year": 2019,
+          "imdbId": "tt9575164",
+          "release": "2019-09-27",
+          "runtime": 129,
+          "imdbRating": 6.9,
+          "countries": [
+            "Japan"
+          ],
+          "title": "From Miyamoto to You",
+          "imdbVotes": "639",
+          "movieLensId": "250936",
+          "tmdbId": 632565,
+          "plot": "Following the manga series and the subsequent television serial of the same name, and featuring the same cast, a young and relatively inexperienced man comes across a woman during his working day and sparks fly.",
+          "originalTitle": "Miyamoto kara Kimi e",
+          "genres": "Romance",
+          "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2019,\"imdbId\":\"tt9575164\",\"release\":\"2019-09-27\",\"runtime\":129,\"imdbRating\":6.9,\"countries\":[\"Japan\"],\"title\":\"From Miyamoto to You\",\"imdbVotes\":\"639\",\"movieLensId\":\"250936\",\"tmdbId\":632565,\"plot\":\"Following the manga series and the subsequent television serial of the same name, and featuring the same cast, a young and relatively inexperienced man comes across a woman during his working day and sparks fly.\",\"originalTitle\":\"Miyamoto kara Kimi e\",\"genres\":\"Romance\",\"movieCount\":0.0,\"imdbIdInt\":\"9575164\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmEzOThiMjktY2YxZC00NjFmLWFmNTYtODI5ZjQwNzkyZDU0XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.639Z\"}",
+          "imdbIdInt": "9575164",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMmEzOThiMjktY2YxZC00NjFmLWFmNTYtODI5ZjQwNzkyZDU0XkEyXkFqcGc@._V1_SX300.jpg",
+          "isAdult": "0",
+          "updatedAt": "2025-12-16T11:53:57.639000000+00:00"
+        },
+        "similarity_score": 0.8261880874633789
+      }
+    ]
+  },
+  "graph_expansion": {
+    "mode": "paths_up_to_depth_1",
+    "count": 30,
+    "triplets": [
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:71848",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,assistant_director,art_department",
+            "imdbId": "nm2909800",
+            "retrieval_text": "{\"primaryProfession\":\"director,assistant_director,art_department\",\"imdbId\":\"nm2909800\",\"name\":\"Munehisa Sakai\",\"knownForTitles\":\"tt1485763,tt3124992,tt0388629,tt0142236\",\"is_director\":true}",
+            "name": "Munehisa Sakai",
+            "knownForTitles": "tt1485763,tt3124992,tt0388629,tt0142236",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:71848",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "20"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:2551",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,writer",
+            "imdbId": "nm0160049",
+            "retrieval_text": "{\"primaryProfession\":\"actress,writer\",\"imdbId\":\"nm0160049\",\"born\":1973,\"movieCount\":11.0,\"name\":\"Luci Christian\",\"knownForTitles\":\"tt0090248,tt4272866,tt2085930,tt3638012\",\"is_actor\":true}",
+            "born": 1973,
+            "movieCount": 11.0,
+            "name": "Luci Christian",
+            "knownForTitles": "tt0090248,tt4272866,tt2085930,tt3638012",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:2551",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Nami\"]",
+            "ordering": "18"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27252",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,soundtrack,archive_footage",
+            "imdbId": "nm0619200",
+            "retrieval_text": "{\"primaryProfession\":\"actor,soundtrack,archive_footage\",\"imdbId\":\"nm0619200\",\"born\":1957,\"movieCount\":12.0,\"name\":\"Chô\",\"knownForTitles\":\"tt1353147,tt1764632,tt1473235,tt0372650\",\"is_actor\":true}",
+            "born": 1957,
+            "movieCount": 12.0,
+            "name": "Chô",
+            "knownForTitles": "tt1353147,tt1764632,tt1473235,tt0372650",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27252",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Brook\"]",
+            "ordering": "19"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:65284",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,sound_department,miscellaneous",
+            "imdbId": "nm5993940",
+            "retrieval_text": "{\"primaryProfession\":\"actress,sound_department,miscellaneous\",\"imdbId\":\"nm5993940\",\"movieCount\":3.0,\"name\":\"Felecia Angelle\",\"knownForTitles\":\"tt5626028,tt0388629,tt9584920,tt4869896\",\"is_actor\":true}",
+            "movieCount": 3.0,
+            "name": "Felecia Angelle",
+            "knownForTitles": "tt5626028,tt0388629,tt9584920,tt4869896",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:65284",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Additional Voices\"]",
+            "ordering": "2"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:105774",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T00:58:09.746000000+00:00",
+            "primaryProfession": "actor,sound_department,miscellaneous",
+            "imdbId": "nm1215197",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T00:58:09.746Z\",\"primaryProfession\":\"actor,sound_department,miscellaneous\",\"imdbId\":\"nm1215197\",\"born\":1973,\"movieCount\":2.0,\"name\":\"Christopher Bevins\",\"knownForTitles\":\"tt2259737,tt0131179,tt0973423,tt3103432\",\"is_actor\":true}",
+            "born": 1973,
+            "movieCount": 2.0,
+            "name": "Christopher Bevins",
+            "knownForTitles": "tt2259737,tt0131179,tt0973423,tt3103432",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:105774",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Additional Voices\"]",
+            "category": "actor"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Adventure\"}",
+            "genre": "Adventure"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2009,
+            "imdbId": "tt1485763",
+            "release": "2013-11-19",
+            "runtime": 113,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "One Piece: Strong World",
+            "imdbVotes": "8115",
+            "movieLensId": "106471",
+            "tmdbId": 41498,
+            "plot": "Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.",
+            "originalTitle": "Wan pisu firumu: sutorongu warudo",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2009,\"imdbId\":\"tt1485763\",\"release\":\"2013-11-19\",\"runtime\":113,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"One Piece: Strong World\",\"imdbVotes\":\"8115\",\"movieLensId\":\"106471\",\"tmdbId\":41498,\"plot\":\"Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.\",\"originalTitle\":\"Wan pisu firumu: sutorongu warudo\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"1485763\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:56.210Z\"}",
+            "imdbIdInt": "1485763",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA5MTM5YWQtNzE1Yi00OWUyLTk1MWItMWVkODM4ZGM5OWUzXkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:56.210000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94094",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Action\"}",
+            "genre": "Action"
+          }
+        },
+        "score": 0.8332403898239136
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107403",
+          "label": "Actor",
+          "properties": {
+            "createdAt": "2025-12-02T01:18:14.903000000+00:00",
+            "primaryProfession": "director,producer,actor",
+            "imdbId": "nm0586281",
+            "retrieval_text": "{\"createdAt\":\"2025-12-02T01:18:14.903Z\",\"primaryProfession\":\"director,producer,actor\",\"imdbId\":\"nm0586281\",\"born\":1960,\"movieCount\":1.0,\"name\":\"Takashi Miike\",\"knownForTitles\":\"tt0235198,tt0296042,tt1436045,tt0290329\",\"is_director\":true}",
+            "born": 1960,
+            "movieCount": 1.0,
+            "name": "Takashi Miike",
+            "knownForTitles": "tt0235198,tt0296042,tt1436045,tt0290329",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107403",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "DIRECTED",
+          "properties": {
+            "createdAt": "2025-12-02T01:18:28.337000000+00:00"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21518",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,soundtrack,archive_footage",
+            "imdbId": "nm0475752",
+            "retrieval_text": "{\"primaryProfession\":\"actress,soundtrack,archive_footage\",\"imdbId\":\"nm0475752\",\"born\":1984,\"movieCount\":11.0,\"name\":\"Chiaki Kuriyama\",\"knownForTitles\":\"tt0266697,tt0266308,tt0378194,tt1381065\",\"is_actor\":true}",
+            "born": 1984,
+            "movieCount": 11.0,
+            "name": "Chiaki Kuriyama",
+            "knownForTitles": "tt0266697,tt0266308,tt0378194,tt1381065",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:21518",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Agi\"]",
+            "ordering": "3"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:22661",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,soundtrack,archive_footage",
+            "imdbId": "nm0464897",
+            "retrieval_text": "{\"primaryProfession\":\"actor,soundtrack,archive_footage\",\"imdbId\":\"nm0464897\",\"born\":1942,\"movieCount\":8.0,\"name\":\"Masaomi Kondô\",\"knownForTitles\":\"tt0488850,tt1360091,tt0060560,tt1360073\",\"is_actor\":true}",
+            "born": 1942,
+            "movieCount": 8.0,
+            "name": "Masaomi Kondô",
+            "knownForTitles": "tt0488850,tt1360091,tt0060560,tt1360073",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:22661",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Shojo, the Kirin Herald\"]",
+            "ordering": "10"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:30986",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,producer",
+            "imdbId": "nm0590907",
+            "retrieval_text": "{\"primaryProfession\":\"actress,producer\",\"imdbId\":\"nm0590907\",\"born\":1964,\"movieCount\":7.0,\"name\":\"Kaho Minami\",\"knownForTitles\":\"tt0375820,tt0368462,tt0203022,tt8888462\",\"is_actor\":true}",
+            "born": 1964,
+            "movieCount": 7.0,
+            "name": "Kaho Minami",
+            "knownForTitles": "tt0375820,tt0368462,tt0203022,tt8888462",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:30986",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Youko Ino\"]",
+            "ordering": "5"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38206",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,producer,soundtrack",
+            "imdbId": "nm0837420",
+            "retrieval_text": "{\"primaryProfession\":\"actor,producer,soundtrack\",\"imdbId\":\"nm0837420\",\"born\":1933,\"movieCount\":13.0,\"name\":\"Bunta Sugawara\",\"knownForTitles\":\"tt0245429,tt0495596,tt0194426,tt0360088\",\"is_actor\":true,\"died\":2014}",
+            "born": 1933,
+            "movieCount": 13.0,
+            "name": "Bunta Sugawara",
+            "knownForTitles": "tt0245429,tt0495596,tt0194426,tt0360088",
+            "is_actor": true,
+            "died": 2014
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:38206",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Shuntaro Ino\"]",
+            "ordering": "4"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:58312",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor",
+            "imdbId": "nm1126340",
+            "retrieval_text": "{\"primaryProfession\":\"actor\",\"imdbId\":\"nm1126340\",\"born\":1993,\"movieCount\":23.0,\"name\":\"Ryûnosuke Kamiki\",\"knownForTitles\":\"tt23289160,tt5311514,tt1474276,tt0245429\",\"is_actor\":true}",
+            "born": 1993,
+            "movieCount": 23.0,
+            "name": "Ryûnosuke Kamiki",
+            "knownForTitles": "tt23289160,tt5311514,tt1474276,tt0245429",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:58312",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Tadashi Ino\"]",
+            "ordering": "1"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:60741",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,archive_footage",
+            "imdbId": "nm2104632",
+            "retrieval_text": "{\"primaryProfession\":\"actress,archive_footage\",\"imdbId\":\"nm2104632\",\"born\":1992,\"movieCount\":6.0,\"name\":\"Riko Narumi\",\"knownForTitles\":\"tt0991183,tt0907664,tt0303558,tt0768145\",\"is_actor\":true}",
+            "born": 1992,
+            "movieCount": 6.0,
+            "name": "Riko Narumi",
+            "knownForTitles": "tt0991183,tt0907664,tt0303558,tt0768145",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:60741",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Tataru Ino\"]",
+            "ordering": "6"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:101075",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T00:49:16.302000000+00:00",
+            "primaryProfession": "actor,director,archive_footage",
+            "imdbId": "nm0870317",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T00:49:16.302Z\",\"primaryProfession\":\"actor,director,archive_footage\",\"imdbId\":\"nm0870317\",\"born\":1962,\"movieCount\":16.0,\"name\":\"Etsushi Toyokawa\",\"knownForTitles\":\"tt6924650,tt0113703,tt0118204,tt1606761\",\"is_actor\":true}",
+            "born": 1962,
+            "movieCount": 16.0,
+            "name": "Etsushi Toyokawa",
+            "knownForTitles": "tt6924650,tt0113703,tt0118204,tt1606761",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:101075",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Lord Yasunori Kato\"]",
+            "category": "actor"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:104018",
+          "label": "Actor",
+          "properties": {
+            "restoredAt": "2025-12-02T00:52:06.566000000+00:00",
+            "primaryProfession": "actor,director,archive_footage",
+            "imdbId": "nm1185734",
+            "retrieval_text": "{\"restoredAt\":\"2025-12-02T00:52:06.566Z\",\"primaryProfession\":\"actor,director,archive_footage\",\"imdbId\":\"nm1185734\",\"born\":1970,\"movieCount\":10.0,\"name\":\"Hiroyuki Miyasako\",\"knownForTitles\":\"tt0359395,tt0343094,tt0405821,tt1682376\",\"is_actor\":true}",
+            "born": 1970,
+            "movieCount": 10.0,
+            "name": "Hiroyuki Miyasako",
+            "knownForTitles": "tt0359395,tt0343094,tt0405821,tt1682376",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:104018",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Sata\"]",
+            "category": "actor"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107704",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107704",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Fantasy\"}",
+            "genre": "Fantasy"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Adventure\"}",
+            "genre": "Adventure"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2005,
+            "imdbId": "tt0425661",
+            "release": "2005-08-06",
+            "runtime": 124,
+            "imdbRating": 6.3,
+            "countries": [
+              "Japan"
+            ],
+            "title": "The Great Yokai War",
+            "imdbVotes": "2820",
+            "movieLensId": "39801",
+            "tmdbId": 42000,
+            "plot": "A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.",
+            "originalTitle": "Yôkai daisensô",
+            "genres": "Adventure,Family,Fantasy",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2005,\"imdbId\":\"tt0425661\",\"release\":\"2005-08-06\",\"runtime\":124,\"imdbRating\":6.3,\"countries\":[\"Japan\"],\"title\":\"The Great Yokai War\",\"imdbVotes\":\"2820\",\"movieLensId\":\"39801\",\"tmdbId\":42000,\"plot\":\"A young boy is chosen as the defender of good and must team up with Japan's ancient spirits and creatures of lore to attempt to destroy the forces of evil.\",\"originalTitle\":\"Yôkai daisensô\",\"genres\":\"Adventure,Family,Fantasy\",\"movieCount\":0.0,\"imdbIdInt\":\"0425661\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":1.3E9,\"updatedAt\":\"2025-12-16T11:53:55.934Z\"}",
+            "imdbIdInt": "0425661",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMmFmZGUwZGItZjhlNi00MGRhLTk3YzItNWQyN2NlODZhZmU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 1300000000.0,
+            "updatedAt": "2025-12-16T11:53:55.934000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:94733",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107907",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107907",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Family\"}",
+            "genre": "Family"
+          }
+        },
+        "score": 0.831308126449585
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:44136",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,art_department,writer",
+            "imdbId": "nm0794000",
+            "retrieval_text": "{\"primaryProfession\":\"director,art_department,writer\",\"imdbId\":\"nm0794000\",\"name\":\"Toshiya Shinohara\",\"knownForTitles\":\"tt0189973,tt3104236,tt0396659,tt5463096\",\"is_director\":true}",
+            "name": "Toshiya Shinohara",
+            "knownForTitles": "tt0189973,tt3104236,tt0396659,tt5463096",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:44136",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "11"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:19092",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,music_department,soundtrack",
+            "imdbId": "nm0383022",
+            "retrieval_text": "{\"primaryProfession\":\"actress,music_department,soundtrack\",\"imdbId\":\"nm0383022\",\"born\":1962,\"movieCount\":10.0,\"name\":\"Noriko Hidaka\",\"knownForTitles\":\"tt0096283,tt0182629,tt0096686,tt0462422\",\"is_actor\":true}",
+            "born": 1962,
+            "movieCount": 10.0,
+            "name": "Noriko Hidaka",
+            "knownForTitles": "tt0096283,tt0182629,tt0096686,tt0462422",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:19092",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Kikyô\"]",
+            "ordering": "7"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27428",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,music_department,archive_sound",
+            "imdbId": "nm0644524",
+            "retrieval_text": "{\"primaryProfession\":\"actor,music_department,archive_sound\",\"imdbId\":\"nm0644524\",\"born\":1942,\"movieCount\":20.0,\"name\":\"Ken'ichi Ogata\",\"knownForTitles\":\"tt0088334,tt0290223,tt0316540,tt0140645\",\"is_actor\":true}",
+            "born": 1942,
+            "movieCount": 20.0,
+            "name": "Ken'ichi Ogata",
+            "knownForTitles": "tt0088334,tt0290223,tt0316540,tt0140645",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27428",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Myoga\"]",
+            "ordering": "6"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27502",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,soundtrack,archive_footage",
+            "imdbId": "nm0476678",
+            "retrieval_text": "{\"primaryProfession\":\"actress,soundtrack,archive_footage\",\"imdbId\":\"nm0476678\",\"born\":1975,\"movieCount\":7.0,\"name\":\"Houko Kuwashima\",\"knownForTitles\":\"tt0294154,tt11032374,tt0292103,tt0462422\",\"is_actor\":true}",
+            "born": 1975,
+            "movieCount": 7.0,
+            "name": "Houko Kuwashima",
+            "knownForTitles": "tt0294154,tt11032374,tt0292103,tt0462422",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:27502",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Sango\"]",
+            "ordering": "4"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:41370",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,sound_department,writer",
+            "imdbId": "nm0875335",
+            "retrieval_text": "{\"primaryProfession\":\"actor,sound_department,writer\",\"imdbId\":\"nm0875335\",\"born\":1962,\"movieCount\":7.0,\"name\":\"Kôji Tsujitani\",\"knownForTitles\":\"tt0290223,tt0216651,tt0270933,tt0138919\",\"is_actor\":true,\"died\":2018}",
+            "born": 1962,
+            "movieCount": 7.0,
+            "name": "Kôji Tsujitani",
+            "knownForTitles": "tt0290223,tt0216651,tt0270933,tt0138919",
+            "is_actor": true,
+            "died": 2018
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:41370",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Miroku\"]",
+            "ordering": "3"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:42236",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actor,music_department,editor",
+            "imdbId": "nm0945322",
+            "retrieval_text": "{\"primaryProfession\":\"actor,music_department,editor\",\"imdbId\":\"nm0945322\",\"born\":1965,\"movieCount\":32.0,\"name\":\"Kappei Yamaguchi\",\"knownForTitles\":\"tt0388629,tt0877057,tt0290223,tt0366621\",\"is_actor\":true}",
+            "born": 1965,
+            "movieCount": 32.0,
+            "name": "Kappei Yamaguchi",
+            "knownForTitles": "tt0388629,tt0877057,tt0290223,tt0366621",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:42236",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Inuyasha\"]",
+            "ordering": "1"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:43731",
+          "label": "Actor",
+          "properties": {
+            "primaryProfession": "actress,soundtrack,archive_sound",
+            "imdbId": "nm0950830",
+            "retrieval_text": "{\"primaryProfession\":\"actress,soundtrack,archive_sound\",\"imdbId\":\"nm0950830\",\"born\":1970,\"movieCount\":7.0,\"name\":\"Satsuki Yukino\",\"knownForTitles\":\"tt0251439,tt0328739,tt5323662,tt0290223\",\"is_actor\":true}",
+            "born": 1970,
+            "movieCount": 7.0,
+            "name": "Satsuki Yukino",
+            "knownForTitles": "tt0251439,tt0328739,tt5323662,tt0290223",
+            "is_actor": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:43731",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "type": "ACTED_IN",
+          "properties": {
+            "characters": "[\"Kagome Higurashi\"]",
+            "ordering": "2"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107709",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Adventure\"}",
+            "genre": "Adventure"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107909",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Action\"}",
+            "genre": "Action"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2001,
+            "imdbId": "tt0322645",
+            "release": "2005-05-25",
+            "runtime": 100,
+            "imdbRating": 7.1,
+            "countries": [
+              "Japan"
+            ],
+            "title": "Inuyasha the Movie: Affections Touching Across Time",
+            "imdbVotes": "2989",
+            "movieLensId": "187025",
+            "tmdbId": 42360,
+            "plot": "During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.",
+            "originalTitle": "Inuyasha: Toki o koeru omoi",
+            "genres": "Action,Adventure,Animation",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2001,\"imdbId\":\"tt0322645\",\"release\":\"2005-05-25\",\"runtime\":100,\"imdbRating\":7.1,\"countries\":[\"Japan\"],\"title\":\"Inuyasha the Movie: Affections Touching Across Time\",\"imdbVotes\":\"2989\",\"movieLensId\":\"187025\",\"tmdbId\":42360,\"plot\":\"During their journey, Inuyasha, Kagome and their party are attacked by Menoumaru, a monster who is looking for Tessaiga, Inuyasha's sword, to an unknown end.\",\"originalTitle\":\"Inuyasha: Toki o koeru omoi\",\"genres\":\"Action,Adventure,Animation\",\"movieCount\":0.0,\"imdbIdInt\":\"0322645\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"updatedAt\":\"2025-12-16T11:53:57.082Z\"}",
+            "imdbIdInt": "0322645",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MTI3MzA0Ml5BMl5BanBnXkFtZTcwOTY3MTcyMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "updatedAt": "2025-12-16T11:53:57.082000000+00:00"
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:83680",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107915",
+          "type": "IN_GENRE",
+          "properties": {}
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:107915",
+          "label": "Genre",
+          "properties": {
+            "retrieval_text": "{\"genre\":\"Animation\"}",
+            "genre": "Animation"
+          }
+        },
+        "score": 0.8281440734863281
+      },
+      {
+        "source": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:39586",
+          "label": "Director",
+          "properties": {
+            "primaryProfession": "director,assistant_director,writer",
+            "imdbId": "nm0847690",
+            "retrieval_text": "{\"primaryProfession\":\"director,assistant_director,writer\",\"imdbId\":\"nm0847690\",\"born\":1955,\"name\":\"Yôjirô Takita\",\"knownForTitles\":\"tt1069238,tt0142637,tt0355857,tt0142799\",\"is_director\":true}",
+            "born": 1955,
+            "name": "Yôjirô Takita",
+            "knownForTitles": "tt1069238,tt0142637,tt0355857,tt0142799",
+            "is_director": true
+          }
+        },
+        "relationship": {
+          "source_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:39586",
+          "target_id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87880",
+          "type": "DIRECTED",
+          "properties": {
+            "ordering": "12"
+          }
+        },
+        "target": {
+          "id": "4:931dd8bc-ec08-468b-a994-2e5d760fd803:87880",
+          "label": "Movie",
+          "properties": {
+            "languages": [
+              "Japanese"
+            ],
+            "year": 2002,
+            "imdbId": "tt0359692",
+            "release": "2003-01-18",
+            "runtime": 143,
+            "imdbRating": 7.4,
+            "countries": [
+              "Japan"
+            ],
+            "title": "When the Last Sword Is Drawn",
+            "imdbVotes": "5525",
+            "movieLensId": "27760",
+            "tmdbId": 14455,
+            "plot": "A samurai goes to extraordinary lengths to provide for his family.",
+            "originalTitle": "Mibu gishi den",
+            "genres": "Drama,History",
+            "retrieval_text": "{\"languages\":[\"Japanese\"],\"year\":2002,\"imdbId\":\"tt0359692\",\"release\":\"2003-01-18\",\"runtime\":143,\"imdbRating\":7.4,\"countries\":[\"Japan\"],\"title\":\"When the Last Sword Is Drawn\",\"imdbVotes\":\"5525\",\"movieLensId\":\"27760\",\"tmdbId\":14455,\"plot\":\"A samurai goes to extraordinary lengths to provide for his family.\",\"originalTitle\":\"Mibu gishi den\",\"genres\":\"Drama,History\",\"movieCount\":0.0,\"imdbIdInt\":\"0359692\",\"poster\":\"https://m.media-amazon.com/images/M/MV5BMTI1MTM1OTcyMF5BMl5BanBnXkFtZTcwODYxMDYzMQ@@._V1_SX300.jpg\",\"isAdult\":\"0\",\"budget\":4000000.0,\"updatedAt\":\"2025-12-16T11:53:55.902Z\"}",
+            "imdbIdInt": "0359692",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTI1MTM1OTcyMF5BMl5BanBnXkFtZTcwODYxMDYzMQ@@._V1_SX300.jpg",
+            "isAdult": "0",
+            "budget": 4000000.0,
+            "updatedAt": "2025-12-16T11:53:55.902000000+00:00"
+          }
+        },
+        "score": 0.8263710141181946
+      }
+    ]
+  }
+}
