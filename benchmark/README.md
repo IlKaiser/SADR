@@ -1,7 +1,11 @@
-# SADR retrieval benchmark
+# SADR benchmark: query reconstruction and expansion
 
-A comparative evaluation of the Symbolic-Assisted Dense Retriever (SADR) against dense
-retrieval and Text2Cypher, on 38 questions with hand-written gold queries.
+SADR does not translate the question into a query, as Text2Cypher does; it starts from the
+nodes returned by a dense retriever, reconstructs the query they have in common (an
+interpretation of what the user asked), and expands the context with the other nodes that
+satisfy it. The benchmark measures how much of the request the reconstructed query
+recovers and how much relevant context the expansion adds, on 38 questions with
+hand-written gold queries. Dense retrieval and Text2Cypher are reported as references.
 
 ## Setup
 
@@ -39,23 +43,31 @@ python benchmark/summarize.py
 
 ## Results (38 questions)
 
+**Reconstruction of the request.** The query SADR reconstructs from five seeds contains
+31 of the 63 constraints of the gold queries (49%): 71% for country and genre questions
+(at least one constraint in every question), 15% for director questions (the seeds rarely
+include the director), 44% for time constraints (only exact years can be expressed).
+
+**Expansion.** The seeds contain 1.6 relevant movies per question on average, the SADR
+result 20.1; relevant movies are added in 29 of 38 questions (recall 0.05 to 0.34,
+Wilcoxon p < 0.001). Keeping the one-hop constraints adds 0.10 recall over the
+implemented simplification (p = 0.008).
+
 | System | P | R | F1 | Movies returned |
 |---|---|---|---|---|
-| dense@5 | 0.36 | 0.05 | 0.08 | 4 |
-| dense@N | 0.12 | 0.45 | 0.15 | 283 |
+| dense@5 (SADR seeds) | 0.36 | 0.05 | 0.08 | 4 |
 | sadr_impl | 0.10 | 0.24 | 0.11 | 226 |
 | sadr_full | 0.12 | 0.34 | 0.14 | 283 |
-| text2cypher | 0.70 | 0.65 | 0.66 | 31 |
+| dense@N (reference) | 0.12 | 0.45 | 0.15 | 283 |
+| text2cypher (reference) | 0.70 | 0.65 | 0.66 | 31 |
 
-- SADR expands the retrieved context: recall rises from 0.05 (its seeds) to 0.34
-  (Wilcoxon p < 0.001).
-- It does not outperform dense retrieval of the same size: recall 0.34 vs 0.45
-  (p = 0.017); F1 difference not significant.
-- Keeping the one-hop constraints improves on the implemented simplification
-  (+0.10 recall, p = 0.008).
-- Text2Cypher is far more precise and has higher recall overall (F1 0.66), except on
-  country + genre questions (recall 0.32 vs 0.53 for SADR); 5 of 38 generated queries
-  fail to execute.
+**References.** A dense ranking of the same size reaches a similar coverage (recall 0.45,
+p = 0.017), so the expansion is not more accurate than retrieving more by similarity; what
+SADR adds is the explicit query stating why each node was retrieved. Text2Cypher solves a
+different problem, translating the question with an LLM that knows the schema: it is
+precise when the translation succeeds, fails on 5 of 38 questions, and has lower recall on
+country and genre questions (0.32 vs 0.53). The two are complementary: SADR can take the
+result of any retriever, including a Text2Cypher query, as its seeds.
 
 ## Threats
 
@@ -64,4 +76,5 @@ python benchmark/summarize.py
   queries use it.
 - 38 questions in four groups; the `not-expressible` group contains constraints outside
   SADR's attribute set by design.
+- The constraint check compares constants, so equivalent formulations are not credited.
 - One graph and one embedding model; the answer-generation step is not evaluated.

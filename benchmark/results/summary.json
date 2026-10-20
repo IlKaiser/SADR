@@ -1,4 +1,44 @@
 {
+ "constraint_recovery": {
+  "recovered": 31,
+  "total": 63,
+  "questions_all_recovered": 11,
+  "by_group": [
+   {
+    "group": "country+genre",
+    "recovered": 17,
+    "total": 24,
+    "all": 5,
+    "questions": 12
+   },
+   {
+    "group": "director",
+    "recovered": 2,
+    "total": 13,
+    "all": 2,
+    "questions": 10
+   },
+   {
+    "group": "time",
+    "recovered": 7,
+    "total": 16,
+    "all": 1,
+    "questions": 8
+   },
+   {
+    "group": "not-expressible",
+    "recovered": 5,
+    "total": 10,
+    "all": 3,
+    "questions": 8
+   }
+  ]
+ },
+ "expansion": {
+  "relevant_in_seeds": 1.61,
+  "relevant_in_sadr_full": 20.11,
+  "questions_with_added_relevant": 29
+ },
  "overall": [
   {
    "system": "dense@5",
@@ -6,13 +46,6 @@
    "recall": 0.0514,
    "f1": 0.0842,
    "returned_movies": 4.0526
-  },
-  {
-   "system": "dense@N",
-   "precision": 0.1205,
-   "recall": 0.4531,
-   "f1": 0.1542,
-   "returned_movies": 282.8947
   },
   {
    "system": "sadr_impl",
@@ -27,6 +60,13 @@
    "recall": 0.3375,
    "f1": 0.1376,
    "returned_movies": 282.8421
+  },
+  {
+   "system": "dense@N",
+   "precision": 0.1205,
+   "recall": 0.4531,
+   "f1": 0.1542,
+   "returned_movies": 282.8947
   },
   {
    "system": "text2cypher",
@@ -45,13 +85,6 @@
    "not-expressible": 0.0033
   },
   {
-   "system": "dense@N",
-   "country+genre": 0.5466,
-   "director": 0.3394,
-   "time": 0.6549,
-   "not-expressible": 0.2531
-  },
-  {
    "system": "sadr_impl",
    "country+genre": 0.4499,
    "director": 0.1463,
@@ -64,6 +97,13 @@
    "director": 0.1859,
    "time": 0.3807,
    "not-expressible": 0.1896
+  },
+  {
+   "system": "dense@N",
+   "country+genre": 0.5466,
+   "director": 0.3394,
+   "time": 0.6549,
+   "not-expressible": 0.2531
   },
   {
    "system": "text2cypher",
@@ -147,14 +187,6 @@
    "p": 0.0
   }
  ],
- "dense_recall_at_k": {
-  "recall@10": 0.0918,
-  "recall@100": 0.3336,
-  "recall@20": 0.1345,
-  "recall@200": 0.4407,
-  "recall@5": 0.0562,
-  "recall@50": 0.2243
- },
  "text2cypher_errors": 5,
  "questions": 38
 }

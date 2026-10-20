@@ -101,12 +101,13 @@ of each browser session in a separate temporary folder.
 
 ## Benchmark
 
-`benchmark/` compares SADR with dense retrieval and Text2Cypher on 38 questions with
-hand-written gold queries. On these questions, SADR raises recall from 0.05 (its five
-seeds) to 0.34, but does not outperform a dense ranking of the same size (0.45) or a
-schema-aware Text2Cypher model (F1 0.66 against 0.14). See
-[benchmark/README.md](benchmark/README.md) for the setup, the results, and the threats to
-validity.
+`benchmark/` measures what SADR is for: on 38 questions with hand-written gold queries,
+the query reconstructed from five retrieved nodes recovers 49% of the constraints of the
+user's request (71% for country and genre requests), and the expansion raises the relevant
+movies per question from 1.6 to 20.1. SADR interprets the evidence returned by a retriever
+rather than translating the question, so it complements Text2Cypher, which is more precise
+when its translation succeeds. See [benchmark/README.md](benchmark/README.md) for the
+setup, all results, and the threats to validity.
 
 ```bash
 PYTHONPATH=. python benchmark/run_benchmark.py
